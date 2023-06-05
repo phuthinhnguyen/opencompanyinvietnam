@@ -27,7 +27,7 @@ input, textarea {
 .banner .text h1 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
 }
 .banner .text p {
   font-family: "Inter";
@@ -55,8 +55,8 @@ input, textarea {
   margin: auto;
 }
 .filters-container .filters-wrap .active {
-  color: #20A049;
-  border-top: 1px solid #20A049;
+  color: #9e3ffd;
+  border-top: 1px solid #9e3ffd;
 }
 .filters-container .filters-wrap li {
   font-family: "Inter";

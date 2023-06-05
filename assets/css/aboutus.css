@@ -41,7 +41,7 @@ input, textarea {
 .banner .banner-text h1 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
 }
 .banner .banner-text h4 {
   font-family: "Anybody";
@@ -77,7 +77,7 @@ input, textarea {
   font-family: "Anybody";
   font-weight: bold;
   font-size: 60px;
-  color: #20A049;
+  color: #9e3ffd;
 }
 .article .container div p:last-of-type {
   font-family: "Anybody";
@@ -139,7 +139,7 @@ input, textarea {
   bottom: 20px;
 }
 .aboutus-content1 .center .item1 {
-  background-color: #20A049;
+  background-color: #9e3ffd;
 }
 .aboutus-content1 .center .item2 {
   background-position: center;
@@ -196,7 +196,7 @@ input, textarea {
 .aboutus-content2 .head .left h1 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
 }
 .aboutus-content2 .head .left p {
   color: #9AA0A0;
@@ -212,7 +212,7 @@ input, textarea {
 }
 .aboutus-content2 .head .right {
   flex: 1;
-  background-color: #20A049;
+  background-color: #9e3ffd;
   position: relative;
   padding: 46px 27px;
 }
@@ -272,20 +272,23 @@ input, textarea {
   margin-top: 140px;
 }
 .ourexpertise h1 {
-  color: #20A049;
-  font-weight: bold;
-  font-family: "Anybody";
+  color: #9e3ffd;
+  font-family: "Jost";
+  font-size: 28px;
 }
 .ourexpertise p {
-  max-width: 552px;
-  font-family: "Inter";
+  max-width: 800px;
+  margin-top: 20px;
+  font-family: "Jost";
 }
 .ourexpertise p:first-of-type {
-  color: #EA6B39;
+  color: black;
   font-weight: 600;
 }
 .ourexpertise p:last-of-type {
-  color: #9AA0A0;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
 }
 .ourexpertise p:not(:last-of-type) {
   color: #EA6B39;
@@ -317,7 +320,7 @@ input, textarea {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #20A049;
+  background-color: #9e3ffd;
   display: block;
   margin: auto;
   margin-top: 20px;
@@ -381,7 +384,7 @@ input, textarea {
 .ourclients .right h1 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
 }
 
 @media screen and (max-width: 1470px) {

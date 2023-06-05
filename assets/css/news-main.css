@@ -30,20 +30,23 @@ input, textarea {
   align-items: center;
 }
 .banner .header h1 {
-  color: #20A049;
-  font-weight: bold;
-  font-family: "Anybody";
+  color: #9e3ffd;
+  font-family: "Jost";
+  font-size: 28px;
 }
 .banner .header p {
-  max-width: 552px;
-  font-family: "Inter";
+  max-width: 800px;
+  margin-top: 20px;
+  font-family: "Jost";
 }
 .banner .header p:first-of-type {
-  color: #EA6B39;
+  color: black;
   font-weight: 600;
 }
 .banner .header p:last-of-type {
-  color: #9AA0A0;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
 }
 .banner .header h1 {
   color: #E0E0E0;
@@ -308,10 +311,10 @@ input, textarea {
 .article-categories .article .head div h3 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
   display: inline-block;
   margin-left: 16px;
-  color: #20A049;
+  color: #9e3ffd;
   margin-left: 16px;
 }
 .article-categories .article .head p {
@@ -321,8 +324,8 @@ input, textarea {
   width: 131px;
   height: 38px;
   border-radius: 999px;
-  color: #20A049;
-  border: 2px solid #20A049;
+  color: #9e3ffd;
+  border: 2px solid #9e3ffd;
   text-align: center;
   line-height: 38px;
   transition: 0.3s;
@@ -348,10 +351,10 @@ input, textarea {
 .article-categories .article .head-tablet div h3 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
   display: inline-block;
   margin-left: 16px;
-  color: #20A049;
+  color: #9e3ffd;
   margin-left: 16px;
 }
 .article-categories .article .head-tablet p {
@@ -361,8 +364,8 @@ input, textarea {
   width: 131px;
   height: 38px;
   border-radius: 999px;
-  color: #20A049;
-  border: 2px solid #20A049;
+  color: #9e3ffd;
+  border: 2px solid #9e3ffd;
   text-align: center;
   line-height: 38px;
   transition: 0.3s;
@@ -517,7 +520,7 @@ input, textarea {
 }
 .article-categories .categories .head h3 {
   font-family: "Anybody";
-  color: #20A049;
+  color: #9e3ffd;
   font-weight: bold;
   margin: 0;
 }
@@ -534,7 +537,7 @@ input, textarea {
 .article-categories .categories .content p:first-of-type {
   font-weight: bold;
   background-color: #E1FAE4;
-  border-left: 4px solid #20A049;
+  border-left: 4px solid #9e3ffd;
 }
 .article-categories .categories .content p:hover {
   cursor: pointer;
@@ -547,7 +550,7 @@ input, textarea {
 }
 .article-categories .categories .followus h3 {
   font-family: "Anybody";
-  color: #20A049;
+  color: #9e3ffd;
   font-weight: bold;
 }
 .article-categories .categories .followus .logo {
@@ -615,10 +618,10 @@ input, textarea {
 .videos .left .head div h3 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
   display: inline-block;
   margin-left: 16px;
-  color: #20A049;
+  color: #9e3ffd;
   margin-left: 16px;
 }
 .videos .left .head p {
@@ -628,8 +631,8 @@ input, textarea {
   width: 131px;
   height: 38px;
   border-radius: 999px;
-  color: #20A049;
-  border: 2px solid #20A049;
+  color: #9e3ffd;
+  border: 2px solid #9e3ffd;
   text-align: center;
   line-height: 38px;
   transition: 0.3s;
@@ -835,7 +838,7 @@ input, textarea {
 }
 .categories-mobile .head h3 {
   font-family: "Anybody";
-  color: #20A049;
+  color: #9e3ffd;
   font-weight: bold;
   margin: 0;
 }
@@ -852,7 +855,7 @@ input, textarea {
 .categories-mobile .content p:first-of-type {
   font-weight: bold;
   background-color: #E1FAE4;
-  border-left: 4px solid #20A049;
+  border-left: 4px solid #9e3ffd;
 }
 .categories-mobile .content p:hover {
   cursor: pointer;
@@ -868,7 +871,7 @@ input, textarea {
 }
 .followus-tablet h3 {
   font-family: "Anybody";
-  color: #20A049;
+  color: #9e3ffd;
   font-weight: bold;
 }
 .followus-tablet .logo {

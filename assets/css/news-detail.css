@@ -26,20 +26,23 @@ input, textarea {
   padding-bottom: 80px;
 }
 .banner h1 {
-  color: #20A049;
-  font-weight: bold;
-  font-family: "Anybody";
+  color: #9e3ffd;
+  font-family: "Jost";
+  font-size: 28px;
 }
 .banner p {
-  max-width: 552px;
-  font-family: "Inter";
+  max-width: 800px;
+  margin-top: 20px;
+  font-family: "Jost";
 }
 .banner p:first-of-type {
-  color: #EA6B39;
+  color: black;
   font-weight: 600;
 }
 .banner p:last-of-type {
-  color: #9AA0A0;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
 }
 .banner h1 {
   color: #E0E0E0;

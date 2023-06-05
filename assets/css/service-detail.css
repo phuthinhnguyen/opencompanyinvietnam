@@ -1,0 +1,152 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+input, textarea {
+  border: 1px solid #9AA0A0;
+}
+
+.banner {
+  max-width: 100%;
+  margin: auto;
+  height: 316px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  height: 124px;
+  padding-left: 103px;
+}
+.banner .text {
+  text-align: center;
+}
+.banner .text h1 {
+  font-family: "Anybody";
+  font-weight: bold;
+  color: #9e3ffd;
+}
+.banner .text p {
+  font-family: "Inter";
+  font-size: medium;
+  color: #FAFAFC;
+  max-width: 552px;
+}
+
+.service-detail-content {
+  width: 100%;
+  padding: 100px;
+}
+.service-detail-content h2 {
+  font-family: "Anybody";
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.service-detail-content .content-wrap {
+  display: flex;
+  width: 100%;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  align-items: flex-start;
+}
+.service-detail-content .content-wrap .img {
+  width: 50%;
+}
+.service-detail-content .content-wrap .img img {
+  width: 100%;
+  height: auto;
+  margin-left: -10px;
+}
+.service-detail-content .content-wrap .img .img1 {
+  min-height: 600px;
+}
+.service-detail-content .content-wrap .text {
+  width: 50%;
+  font-family: "Inter";
+  font-size: 18px;
+  text-align: left;
+}
+.service-detail-content .content-wrap .text ul li {
+  margin-top: 10px;
+}
+
+.pagination {
+  height: 39px;
+  display: flex;
+  max-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.pagination img {
+  width: 22px;
+  height: 22px;
+}
+.pagination div {
+  display: flex;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  align-items: center;
+}
+.pagination div a {
+  text-decoration: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  line-height: 38px;
+  background-color: #E0E0E0;
+  text-align: center;
+  color: #060810;
+  transition: 0.3s;
+}
+.pagination div a:hover {
+  background-color: #060810;
+  color: #E0E0E0;
+}
+
+@media screen and (max-width: 1300px) {
+  .service-detail-content {
+    padding: 100px 50px;
+  }
+  .banner {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .service-detail-content h2 {
+    text-align: center;
+  }
+  .service-detail-content .content-wrap {
+    display: block;
+  }
+  .service-detail-content .content-wrap .img {
+    width: 100%;
+  }
+  .service-detail-content .content-wrap .img img {
+    height: auto;
+    min-height: 250px;
+  }
+  .service-detail-content .content-wrap .img .img1 {
+    min-height: 250px;
+  }
+  .service-detail-content .content-wrap .text {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .banner {
+    justify-content: center;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .service-detail-content .content-wrap .img img {
+    margin: auto;
+  }
+}

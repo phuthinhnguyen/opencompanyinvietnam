@@ -27,7 +27,7 @@ input, textarea {
 .banner .text h1 {
   font-family: "Anybody";
   font-weight: bold;
-  color: #20A049;
+  color: #9e3ffd;
 }
 .banner .text p {
   font-family: "Inter";
@@ -54,20 +54,23 @@ input, textarea {
   height: 92px;
 }
 .content-ourcontact .content-ourcontact-top h1 {
-  color: #20A049;
-  font-weight: bold;
-  font-family: "Anybody";
+  color: #9e3ffd;
+  font-family: "Jost";
+  font-size: 28px;
 }
 .content-ourcontact .content-ourcontact-top p {
-  max-width: 552px;
-  font-family: "Inter";
+  max-width: 800px;
+  margin-top: 20px;
+  font-family: "Jost";
 }
 .content-ourcontact .content-ourcontact-top p:first-of-type {
-  color: #EA6B39;
+  color: black;
   font-weight: 600;
 }
 .content-ourcontact .content-ourcontact-top p:last-of-type {
-  color: #9AA0A0;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
 }
 .content-ourcontact .content-ourcontact-top p:last-of-type {
   color: #EA6B39;
@@ -172,7 +175,7 @@ input, textarea {
 .content-getintouchandmap .item1 .item1-wrap .content-getintouch-bottom button {
   margin-top: 41px;
   height: 59px;
-  background-color: #20A049;
+  background-color: #9e3ffd;
   width: 181px;
   color: #fff;
   font-family: "Mulish";
