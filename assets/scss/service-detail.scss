@@ -1,0 +1,120 @@
+@import "font";
+@import "variable";
+@import "mixin";
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    box-sizing: border-box;
+}
+input,textarea{
+    border: 1px solid $dark-03;
+}
+
+// banner
+.banner{
+   @include banner;
+   justify-content: flex-start;
+   height: 124px;
+   padding-left: 103px;
+}
+
+// content
+.service-detail-content{
+    width: 100%;
+    padding: 100px;
+    h2{
+        @include font($fontAnybody);
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+    .content-wrap{
+        display: flex;
+        width: 100%;
+        column-gap: 24px;
+        align-items: flex-start;
+        // justify-content: space-between;
+        .img{
+            // flex: 1;
+            width: 50%;
+            img{
+                width: 100%;
+                // height: 100%;
+                height: auto;
+                margin-left: -10px;
+            }
+            .img1{
+                min-height: 600px;
+            }
+        }
+        .text{
+            // flex: 1;
+            width: 50%;
+            @include font($fontInter);
+            font-size: 18px;
+            text-align: left;
+            ul{
+                li{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+// pagination
+.pagination{
+   @include pagination;
+}
+
+@media screen and (max-width:1300px){
+    .service-detail-content{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width:991px){
+    .service-detail-content{
+        h2{
+            text-align: center;
+        }
+        .content-wrap{
+            display: block;
+            .img{
+                width: 100%;
+                img{
+                    height: auto;
+                    min-height: 250px;
+            
+                }
+                .img1{
+                    min-height: 250px;
+                }
+            }
+            .text{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+    .banner{
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:370px){
+    .service-detail-content{
+        .content-wrap{
+            .img{
+                img{
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+

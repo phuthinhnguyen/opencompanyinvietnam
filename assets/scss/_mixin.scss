@@ -1,0 +1,389 @@
+@mixin content-top(){
+    text-align: center;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        color: $primary-green;
+        font-weight: bold;
+        @include font($fontAnybody);
+    }
+    p{
+        max-width: 552px;
+        @include font($fontInter);
+        &:first-of-type{
+            color: $primary-coral-50;
+            font-weight: 600;
+        }
+        &:last-of-type{
+            color: $dark-03;
+        }
+    }
+}
+
+@mixin newsandblogs(){
+    h4{
+        @include font($fontAnybody);
+        font-weight: bold;
+    }
+    p{
+        @include font($fontInter);
+        color: $dark-02;
+    }
+}
+
+@mixin seemore(){
+    height: 54px;
+    // width: 143px;
+    width: 155px;
+    margin: auto;
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    p{
+        display: inline-block;
+        @include font($fontInter);
+        color: $dark-02;
+    }
+    div{
+        display: inline-block;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }    
+}
+
+@mixin banner(){
+    max-width: $max-width-homepage;
+    margin: auto;
+    height: 316px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text{
+        text-align: center;
+        h1{
+            @include font($fontAnybody);
+            font-weight: bold;
+            color: $primary-green;
+        }
+        p{
+            @include font($fontInter);
+            font-size: medium;
+            color: $light-04;
+            max-width: 552px;
+        }
+    }
+}
+
+@mixin ourservice-item{
+    .img-service-hover{
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+        // left: 15px;
+        // top: 0;
+        left: 3%;
+    }
+    div{
+        // position: absolute;
+        // top: 20%;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+        img{
+            width: 74px;
+            height: 64px;
+            margin-bottom: 20px;
+        }
+        h3{
+            @include font($fontAnybody);
+            font-weight: bold;
+        }
+        p{
+            color: $dark-03;
+            text-align: center;
+            padding: 10px;
+           
+        }
+    }
+    &:hover{
+        color: #FAFAFC;
+        cursor: pointer;
+        .img-service-hover{
+            opacity: 1;
+            z-index: -1;
+        }
+        div{
+            p{
+                color: #FAFAFC;
+            }
+        }
+    }
+}
+
+@mixin filter{
+    margin: auto;
+    padding: $padding;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: $max-width-homepage;
+    .filters-wrap{
+        .active{
+            color: $primary-green;
+            border-top: 1px solid $primary-green;
+        }
+        list-style-type: none;
+        position: relative;
+        width: 360px;
+        display: table;
+        text-align: center;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin: auto;
+        li{
+            @include font($fontInter);
+            display: table-cell;
+            max-width: 184px;
+            cursor: pointer;
+            position: relative;
+            font-size: medium;
+            color: $dark-01;
+            padding: 10px 20px;
+        }
+    }
+    .filters-content{
+        margin-top: 50px;
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            .all{
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                flex: 0 0 50%;
+                max-width: 33%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                .single-menu{
+                    .title-wrap{
+                        display: flex !important;
+                        justify-content: space-around !important;
+                        flex-direction: column;
+                        align-items: center;
+                        height: 423px;
+                        text-align: center;
+                        box-shadow: 0px 10px 30px 0px rgba(153,153,153,0.2);
+                    }
+ 
+                }
+            }
+        }
+    }
+}
+
+@mixin news-text{
+    color: $light-04;
+    position: absolute;
+    left: 39px;
+    bottom: 90px;
+    p:first-of-type{
+        span{
+            @include font($fontInter);
+            font-size: 14px;
+        }
+        a{
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            border: 1px solid black;
+        }
+    }
+    h3{
+        @include font($fontAnybody);
+        font-weight: bold;
+    }
+    p:last-of-type{
+        @include font($fontInter);
+    }
+    .readmore{
+        @include font($fontInter);
+        border-radius: 999px;
+        height: 40px;
+        width: 132px;
+        border: 1px solid $light-04;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+@mixin pagination{
+    height: 39px;
+    display: flex;
+    max-width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 80px;
+    img{
+        width: 22px;
+        height: 22px;
+    }
+    div{
+        display: flex;
+        column-gap: 9px;
+        align-items: center;
+        a{
+            text-decoration: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 4px;
+            line-height: 38px;
+            background-color: $dark-04;
+            text-align: center;
+            color: $dark-blue-01;
+            transition: 0.3s;
+            &:hover{
+                background-color: $dark-blue-01;
+                color: $dark-04;
+            }
+        }
+    }
+
+}
+
+@mixin article-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        h3{
+            @include font($fontAnybody);
+            font-weight: bold;
+            color: $primary-green;
+            display: inline-block;
+            margin-left: 16px;
+            color: $primary-green;
+            margin-left: 16px;
+        }   
+    }
+    p{
+        @include font($fontInter);
+        font-weight: bold;
+        font-size: 16px;
+        width: 131px;
+        height: 38px;
+        border-radius: 999px;
+        color: $primary-green;
+        border: 2px solid $primary-green;
+        text-align: center;
+        line-height: 38px;
+        transition: .3s;
+        &:hover{
+            cursor: pointer;
+            background-color: $dark-blue-01;
+            border: none;
+        }
+    }
+        
+}
+
+@mixin categories{
+    .head{
+        h3{
+            @include font($fontAnybody);
+            color: $primary-green;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+    .content{
+        margin-top: 32px;
+        p{
+            padding: 7px 20px;
+            margin-top: 8px;
+            color: $dark-blue-01;
+            @include font($fontAnybody);
+            font-size: 22px;
+            &:first-of-type{
+                font-weight: bold;
+                background-color: $primary-green-10;
+                border-left: 4px solid $primary-green;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@mixin followus{
+    &:hover{
+        cursor: pointer;
+    }
+    h3{
+        @include font($fontAnybody);
+        color: $primary-green;
+        font-weight: bold;
+    }
+    .logo{
+        display: flex;
+        column-gap: 8px;
+        margin-top: 32px;
+        .item1, .item2, .item3{
+            padding: 5px 0;
+            border-radius: 6px;
+            width: 92px;
+            height: 94px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 39px;
+                height: 39px;
+            }
+            p{
+                @include font($fontInter);
+                color: $light-04;
+                margin: 0;
+            }
+        }
+        .item1{
+            background-color: #1877F2;
+        }
+        .item2{
+            background-color: #FF0302;
+        }
+        .item3{
+        
+            background-color: $light-02;
+            p{
+                color: #0A66C2;
+            }
+        }
+    }
+}

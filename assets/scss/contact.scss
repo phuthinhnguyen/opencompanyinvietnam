@@ -1,0 +1,242 @@
+@import "font";
+@import "variable";
+@import "mixin";
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    box-sizing: border-box;
+}
+input,textarea{
+    border: 1px solid $dark-03;
+}
+
+// banner
+.banner{
+   @include banner;
+}
+
+// content-ourcontact
+.content-ourcontact{
+    max-width: $max-width-homepage;
+    margin: auto;
+    padding: $padding;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .content-ourcontact-top{
+        @include content-top;
+        height: 92px;
+       p{
+        &:last-of-type{
+            color: $primary-coral-50;
+            font-weight: 600;
+        }
+       }
+    }
+    .content-ourcontact-bottom{
+        margin-top: 40px;
+        padding: 24px 32px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        .item{
+            height: 116px;
+            max-width: 280px;
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 10px;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+            .text{
+                h5{
+                    @include font($fontAnybody);
+                    font-weight: bold;
+                }
+                h6{
+                    @include font($fontAnybody);
+                }
+            }
+        }
+    }
+}
+
+// content-getintouchandmap
+.content-getintouchandmap{
+    height: 670px;
+    max-width: $max-width-homepage;
+    margin: auto;
+    padding: $padding;
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 68px;
+    .item1{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .item1-wrap{
+            height: 508px;
+            width: 100%;
+            .content-getintouch-top{
+                height: 52px;
+                text-align: center;
+                h1{
+                    @include font($fontAnybody);
+                    font-weight: bold; 
+                }
+            }
+            .content-getintouch-center{
+                margin-top: 48px;
+                .item1{
+                    display: flex;
+                    column-gap: 24px;
+                    input{
+                        flex: 1;
+                        border-radius: 4px;
+                        height: 48px;
+                        padding-left: 16px;
+                    }
+                }
+                .item2{
+                    margin-top: 24px;
+                    input{
+                        border-radius: 4px;
+                        height: 48px;
+                        padding-left: 16px;
+                        width: 100%;
+                    }
+                }
+                .item3{
+                    margin-top: 24px;
+                    textarea{
+                        height: 164px;
+                        border-radius: 4px;
+                        resize: none;
+                        padding-left: 16px;
+                        padding-top: 12px;
+                        width: 100%;
+                    }
+                }
+               
+            }
+            .content-getintouch-bottom{
+                display: flex;
+                justify-content: center;
+                button{
+                    margin-top: 41px;
+                    height: 59px;
+                    background-color: $primary-green;
+                    width: 181px;
+                    color: #fff;
+                    @include font($fontMulish);
+                    font-size: 18px;
+                    border-radius: 6px;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: black;
+                    }
+                    img{
+                        width: 14px;
+                        height: 13px;
+                    }
+                }
+            }
+           
+        }
+       
+    }
+    .item2{
+        flex: 1;
+        height: 100%;
+        #googleMap{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1199px){
+    // .content-ourcontact{
+    //     .content-ourcontact-bottom{
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
+    // }
+    .content-ourcontact{
+        .content-ourcontact-bottom{
+            padding: 24px 10px;
+        }
+    }
+    .content-getintouchandmap{
+        flex-direction: column;
+        height: 1200px;
+        .item2{
+            margin-top: 40px;
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .content-ourcontact{
+        .content-ourcontact-bottom{
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .content-ourcontact{
+        padding-bottom: 0;
+    }
+    .content-getintouchandmap{
+        height: 1350px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .item1{
+            .item1-wrap{
+                .content-getintouch-center{
+                    .item1{
+                        display: block;
+                        input{
+                            width: 100%;
+                            &:last-of-type{
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:662px){
+    .content-ourcontact{
+        .content-ourcontact-bottom{
+            .item{
+                justify-content: flex-start;
+                width: 300px;
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:575px){
+    .content-ourcontact{
+        padding: 40px 10px;
+        padding-bottom: 0;
+        .content-ourcontact-bottom{
+           .item{
+                width: 300px;
+           } 
+        }
+        
+    }
+    .content-getintouchandmap{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
