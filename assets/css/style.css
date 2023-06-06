@@ -134,6 +134,8 @@ nav .row .center ul li a h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
+  font-size: 20px;
+  font-weight: 600;
 }
 nav .row .center ul li a h6 img {
   width: 14px;
@@ -648,7 +650,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 }
 .reviews h4 {
   color: white;
-  font-size: 26px;
+  font-size: 28px;
 }
 .reviews .carousel {
   height: 400px;
@@ -682,6 +684,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .owl-carousel-container h1 {
   margin-bottom: 40px;
   color: black;
+  font-size: 40px;
 }
 .owl-carousel-container .owl-carousel {
   padding: 30px 70px;
@@ -699,93 +702,119 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   filter: grayscale(0);
 }
 
-.content-getintouch {
-  margin: auto;
+.contact {
   max-width: 100%;
-  height: 670px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: auto;
+  padding: 0 50px;
+  padding-bottom: 80px;
+  font-family: "Jost";
 }
-.content-getintouch .wrap {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  opacity: 0.7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.content-getintouch .wrap .content-getintouch-container {
-  opacity: 1;
-  height: 508px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-}
-.content-getintouch .wrap .content-getintouch-container .content-getintouch-top {
-  height: 52px;
+.contact h4 {
+  color: #9e3ffd;
+  font-size: 26px;
   text-align: center;
 }
-.content-getintouch .wrap .content-getintouch-container .content-getintouch-top h1 {
-  font-family: "Anybody";
-  color: #FAFAFC;
+.contact h1 {
+  text-align: center;
 }
-.content-getintouch .wrap .content-getintouch-container .content-getintouch-bottom {
-  height: 308px;
+.contact .contact-content {
   display: flex;
-  flex-direction: column;
-  row-gap: 24px;
+  margin-top: 40px;
 }
-.content-getintouch .wrap .content-getintouch-container .content-getintouch-bottom .item1 {
+.contact .contact-content .item1 {
+  width: 50%;
+}
+.contact .contact-content .item1 .item {
+  height: 116px;
+  max-width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.contact .contact-content .item1 .item img {
+  width: 24px;
+  height: 24px;
+}
+.contact .contact-content .item1 .item .text h5 {
+  font-family: "Jost";
+  font-weight: bold;
+}
+.contact .contact-content .item1 .item .text h6 {
+  font-family: "Jost";
+}
+.contact .contact-content .item2 {
+  width: 50%;
+}
+.contact .contact-content .item2 .content-getintouch-center {
+  width: 100%;
+  row-gap: 20px;
+}
+.contact .contact-content .item2 .content-getintouch-center input {
+  border-radius: 4px;
+  padding-left: 16px;
+  height: 48px;
+  border: 1px solid #9AA0A0;
+}
+.contact .contact-content .item2 .content-getintouch-center input .getintouch-item1 {
   display: flex;
   -moz-column-gap: 24px;
        column-gap: 24px;
-}
-.content-getintouch .wrap .content-getintouch-container .content-getintouch-bottom .item1 input {
-  display: inline-block;
-  height: 48px;
-  border-radius: 4px;
-  padding-left: 16px;
-}
-.content-getintouch .wrap .content-getintouch-container .content-getintouch-bottom .item2 input {
-  display: inline-block;
-  height: 48px;
-  border-radius: 4px;
+  justify-content: space-between;
   width: 100%;
-  padding-left: 16px;
 }
-.content-getintouch .wrap .content-getintouch-container .content-getintouch-bottom .item3 textarea {
-  resize: none;
+.contact .contact-content .item2 .content-getintouch-center input .getintouch-item1 input {
+  flex: 1;
+}
+.contact .contact-content .item2 .content-getintouch-center input .getintouch-item2 {
+  margin-top: 20px;
+  width: 100%;
+}
+.contact .contact-content .item2 .content-getintouch-center input .getintouch-item2 input {
+  display: block;
+  width: 100%;
+}
+.contact .contact-content .item2 .content-getintouch-center input .getintouch-item3 {
+  margin-top: 20px;
+}
+.contact .contact-content .item2 .content-getintouch-center input .getintouch-item3 textarea {
+  width: 100%;
   height: 164px;
-  width: 100%;
-  padding-left: 16px;
-  padding-top: 8px;
   border-radius: 4px;
+  resize: none;
+  padding-left: 26px;
+  padding-top: 12px;
+  border: 1px solid #9AA0A0;
 }
-.content-getintouch .wrap .content-getintouch-container button {
+.contact .contact-content .item2 .content-getintouch-bottom {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-content .item2 .content-getintouch-bottom button {
+  margin-top: 41px;
   height: 59px;
   background-color: #9e3ffd;
   width: 181px;
   color: #fff;
-  font-family: "Mulish";
+  font-family: "Jost";
   font-size: 18px;
   border-radius: 6px;
   transition: 0.5s;
 }
-.content-getintouch .wrap .content-getintouch-container button:hover {
+.contact .contact-content .item2 .content-getintouch-bottom button:hover {
   background-color: black;
 }
-.content-getintouch .wrap .content-getintouch-container button img {
-  width: 15px;
-  height: 14px;
-  margin-right: 5px;
-  margin-bottom: 3px;
+.contact .contact-content .item2 .content-getintouch-bottom button img {
+  width: 14px;
+  height: 13px;
+}
+
+.maps {
+  height: 400px;
+}
+.maps #googleMap {
+  width: 100%;
+  height: 100%;
 }
 
 footer {

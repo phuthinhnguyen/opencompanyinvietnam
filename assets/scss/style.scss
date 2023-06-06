@@ -122,6 +122,8 @@ nav{
                             margin: 0;
                             padding: 0;
                             font-weight: bold;
+                            font-size: 20px;
+                            font-weight:600;
                             img{
                                 width: 14px;
                                 height: 7px;
@@ -596,7 +598,7 @@ nav{
     color: white;
     h4{
         color: white;
-        font-size: 26px;
+        font-size: 28px;
     }
     .carousel{
         height: 400px;
@@ -639,6 +641,7 @@ nav{
     h1{
         margin-bottom: 40px;
         color: black;
+        font-size: 40px;
     }
     .owl-carousel{
         padding: 30px 70px;
@@ -657,101 +660,123 @@ nav{
     }
 }
 
-
-
-// content-getintouch
-.content-getintouch{
-    margin: auto;
+// contact
+.contact{
     max-width: $max-width-homepage;
-    height: 670px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .wrap{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        opacity: 0.7;
+    margin: auto;
+    padding: $padding; 
+    padding-bottom: 80px;
+    @include font($fontJost);
+    h4{
+        color: $primary-green;
+        font-size: 26px;
+        text-align: center; 
+    }
+    h1{
+        text-align: center;
+    }
+    .contact-content{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        .content-getintouch-container{
-            opacity: 1;
-            height: 508px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-            .content-getintouch-top{
-                height: 52px;
-                text-align: center;
-                h1{
-                    @include font($fontAnybody);
-                    color: $light-04;
+        margin-top: 40px;
+        .item1{
+            width: 50%;
+            .item{
+                height: 116px;
+                max-width: 280px;
+                display: flex;
+                justify-content: flex-start;
+                column-gap: 10px;
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+                .text{
+                    h5{
+                        @include font($fontJost);
+                        font-weight: bold;
+                    }
+                    h6{
+                        @include font($fontJost);
+                    }
+                }
+            }
+        }
+        .item2{
+            width: 50%;
+            .content-getintouch-center{
+                width: 100%;
+                // display: flex;
+                row-gap: 20px;
+                // flex-direction: column;
+                input{
+                    border-radius: 4px;
+                    padding-left: 16px;
+                    height: 48px;
+                    border: 1px solid $dark-03;
+                    .getintouch-item1{
+                        display: flex;
+                        column-gap: 24px;
+                        justify-content: space-between;
+                        width: 100%;
+                        input{
+                            flex: 1;
+                        }
+                    }
+                    .getintouch-item2{
+                        margin-top: 20px;
+                        width: 100%;
+                        input{
+                           display: block;
+                            width: 100%;
+                        }
+                    }
+                    .getintouch-item3{
+                        margin-top: 20px;
+                        textarea{
+                            width: 100%;
+                            height: 164px;
+                            border-radius: 4px;
+                            resize: none;
+                            padding-left: 26px;
+                            padding-top: 12px;
+                            border: 1px solid $dark-03;
+                        }
+                    }
                 }
             }
             .content-getintouch-bottom{
-                height: 308px;
                 display: flex;
-                flex-direction: column;
-                row-gap: 24px;
-                .item1{
-                    display: flex;
-                    column-gap: 24px;
-                    input{
-                        display: inline-block;
-                        height: 48px;
-                        border-radius: 4px;
-                        padding-left: 16px; 
+                justify-content: center;
+                button{
+                    margin-top: 41px;
+                    height: 59px;
+                    background-color: $primary-green;
+                    width: 181px;
+                    color: #fff;
+                    @include font($fontJost);
+                    font-size: 18px;
+                    border-radius: 6px;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: black;
                     }
-                }
-                .item2{
-                    input{
-                        display: inline-block;
-                        height: 48px;
-                        border-radius: 4px;
-                        width: 100%;
-                        padding-left: 16px; 
+                    img{
+                        width: 14px;
+                        height: 13px;
                     }
-                }
-                .item3{
-                    textarea{
-                        resize: none;
-                        height: 164px;
-                        width: 100%;
-                        padding-left: 16px; 
-                        padding-top: 8px;
-                        border-radius: 4px;
-                    }
-                }
-                
-            }
-            button{
-                height: 59px;
-                background-color: $primary-green;
-                width: 181px;
-                color: #fff;
-                @include font($fontMulish);
-                font-size: 18px;
-                border-radius: 6px;
-                transition: 0.5s;
-                &:hover{
-                    background-color: black;
-                }
-                img{
-                    width: 15px;
-                    height: 14px;
-                    margin-right: 5px;
-                    margin-bottom: 3px;
                 }
             }
         }
     }
-   
+}
+
+// maps
+.maps{
+    height: 400px;
+    #googleMap{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 // footer
