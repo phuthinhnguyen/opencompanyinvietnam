@@ -21,6 +21,8 @@ body{
 input,button,textarea{
     border: none;
 }
+
+
 // top
 .top{
     @include font($fontJost);
@@ -483,7 +485,7 @@ nav{
             // width: 313px;
             .text{
                 text-align: center;
-                @include font($fontAnybody);
+                @include font($fontJost);
                 strong.number {
                     font-weight: bold;
                     font-size: 40px;
@@ -749,135 +751,6 @@ nav{
     }
 }
 
-// footer
-footer{
-    // height: 589px;
-    max-width: $max-width-homepage;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 40px;
-    background-color: $footer-background-color;
-    .footer-top{
-        // height: 307px;
-        display: flex;
-        justify-content: space-between;
-        padding: $padding;
-        column-gap: 20px;
-        .item1{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            // max-width: 345px;
-            min-width: 250px;
-            img{
-                width: 207px;
-                height: 138px;
-            }   
-            h5{
-                font-weight: bold;
-                @include font($fontAnybody);
-                color: $footer-color;
-            }
-            div{
-                img{
-                    width: 40px;
-                    height: 40px;
-                    margin-right: 15px;
-                }
-            }
-        }
-        .item2{
-            // height: 252px;
-            display: flex;
-            column-gap: 56px;
-            .contactus{
-                height: 224px;
-                max-width: 254px;
-                min-width: 250px;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                row-gap: 20px;
-                h4{
-                    @include font($fontAnybody);
-                    color: $primary-green;
-                    font-weight: bold;
-                }
-                .content{
-                    p{
-                        @include font($fontInter);
-                        color: $footer-color;
-                    }
-                    div{
-                        p{
-                            display: inline-block;
-                        }
-                        img{
-                            width: 23px;
-                            height: 20px;
-                            margin-right: 10px;
-                        }
-                    }
-                }
-            }
-            .navigation,.quicklinks{
-                // max-width: 141px;
-                min-width: 145px;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                row-gap: 20px;
-                h4{
-                    @include font($fontAnybody);
-                    color: $primary-green;
-                    font-weight: bold;
-                }
-                .content{
-                    // height: 196px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    a{
-                        display: block;
-                        text-decoration: none;
-                        color: $footer-color;
-                  
-                        @include font($fontWorksans);
-                        font-size: 17px;
-                        transition: 0.3s;
-                        &:hover{
-                            color: $primary-coral-50;
-                        }  
-                        &:not(:first-of-type){
-                            margin-top: 20px;
-                        } 
-                    }
-                }
-            }
-        }
-    }
-    hr{
-        margin-top: 40px;
-    }
-    .footer-bottom{
-        height: 122px;
-        margin-top: 40px;
-        padding: $padding;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        p{
-            @include font($fontInter);
-            color: #fff;
-            font-size: small;
-            margin: 0;
-            padding: 0;
-        }
-    }
-}
- 
 
 #scrolltop{
     img{
@@ -947,35 +820,7 @@ footer{
         
     }
 }
-@media screen and (max-width:1300px){
-    footer{
-        .footer-top{
-            .item2{
-                // .quicklinks{
-                //     display: none;
-                // }
-                display: grid;
-                grid-template-columns: auto auto;
-                row-gap: 40px;
-                .contactus,.navigation,.quicklinks{
-                    h4{
-                        color: $primary-coral-50;
-                    }
-                    .content{
-                        .app{
-                            width: 50%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .content-theytrustus{
-        .content-theytrustus-bottom{
-            padding: 80px 10px;
-        }
-    }
-}
+
 @media screen and (max-width:1199px){
     nav{
         .row{
@@ -1022,32 +867,12 @@ footer{
         }
     }
 
-    .content-newsandblogs{
-        .content-newsandblogs-center{
-            .item{
-                .text{
-                    margin-top: 0;
-                }
-            }
-        }
-    }
     .ftco-counter{
         .container{
             column-gap: 15px;
         }
     }
-    .content-featuredproject{
-        .content-featuredproject-content{
-            row-gap: 50px;
-            .item{
-                div{
-                    img{
-                        height: 300px;
-                    }
-                }
-            }
-        }
-    }
+   
 }
 @media screen and (max-width:1100px){
     footer{
@@ -1160,95 +985,9 @@ footer{
            flex-direction: column; 
         }
     }
-    .content-masssolutions{
-        display: flex;
-        padding-left: 40px;
-        padding-right: 20px;
-        .content-masssolutions-container{
-                position: static;
-                max-width: 722px;
-                margin: auto;
-                .masssolutions-wrap{
-                    .masssolutions-wrap-bottom{
-                        .item{
-                            h4{
-                                color: $state-warning-01;
-                            }
-                        }
-                    }
-                }
-        }
-    }
-    .content-whatpeoplesayaboutus{
-        .content-whatpeoplesayaboutus-bottom{
-            .carousel-item-wrap{
-                .item{
-                    &:last-of-type{
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-
-    .content-newsandblogs{
-        .content-newsandblogs-center{
-            display: none;
-        }
-        .seemore1{
-                display: none;
-       }
-       .content-newsandblogs-bottom{
-            display: none;
-       }
-       .content-newsandblogs-bottom-tablet{
-            display: flex;
-       }
-    }
-    .content-theytrustus{
-        padding-bottom: 0;
-        .content-theytrustus-bottom{
-           grid-template-columns: auto auto auto;
-           padding-left: 20px;
-           padding-right: 20px;
-           .order7,.order8{
-                display: none;
-           }    
-        }
-    }
-    footer{
-        .footer-top{
-            padding-left: 30px;
-            padding-right: 30px;
-            .item2{
-                .contactus,.navigation{
-                    h4{
-                        color: $primary-coral-50;
-                    }
-                }
-            }
-        }
-        .footer-bottom{
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-    }
     .ftco-counter{
         .container{
             justify-content: space-around;
-        }
-    }
-    .content-featuredproject{
-        .content-featuredproject-content{
-            row-gap: 50px;
-            grid-template-columns: auto auto;
-            .item{
-                div{
-                    img{
-                        height: 350px;
-                    }
-                }
-            }
         }
     }
 }
@@ -1320,21 +1059,7 @@ footer{
         padding-right: 20px;
     }
 }
-@media screen and (max-width:820px){
-    footer{
-        .footer-top{
-            display: block;
-            .item2{
-            //    display: block;
-               .contactus{
-                margin-top: 30px;
-         
-               }
-          
-            }
-        }
-    }
-}
+
 @media screen and (max-width:767px){
     .img{
         .img-wrap{
@@ -1369,89 +1094,8 @@ footer{
             }
         }
     }
-    .content-theytrustus{
-        .content-theytrustus-bottom{
-            grid-template-columns: auto auto;
-            column-gap: 50px;
-            .item-img-3{
-                margin-top: 90px;
-            }
-            .item{
-                .img-none2{
-                    display: none;
-                }
-            }
-        }
-    }
-    .content-newsandblogs{
-       .content-newsandblogs-bottom-tablet{
-            height: 900px;
-            flex-direction: column;
-            row-gap: 32px;
-            .item1{
-                .text{
-                    display: none;
-                }
-            }
-       }
-    }
-    .content-featuredproject{
-        .content-featuredproject-content{
-            row-gap: 20px;
-            .item{
-                div{
-                    img{
-                        height: 300px;
-                    }
-                }
-            }
-        }
-    }
-    footer{
-        .footer-top{
-            .item2{
-                .quicklinks{
-                 .content{
-                     .app{
-                         width: 50%;
-                     }
-                 }
-                }
-             }
-        }
-    }
 }
-@media screen and (max-width:650px){
-    .content-featuredproject{
-        .content-featuredproject-content{
-            row-gap: 50px;
-            .item{
-                div{
-                    img{
-                        height: 260px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width:620px){
-    footer{
-        .footer-top{
-            .item2{
-                display: block;
-                .quicklinks{
-                    margin-top: 40px;
-                    .content{
-                        .app{
-                            width: 30%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+
 @media screen and (max-width:600px) {
     .img{
         .img-wrap{
@@ -1521,86 +1165,6 @@ footer{
             }
         }
     }
-    .content-masssolutions{
-        text-align: center;
-        height: 1300px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        .content-masssolutions-container{
-            margin-top: 80px;
-            .masssolutions-wrap{
-                .masssolutions-wrap-bottom{
-                    grid-template-columns: auto;
-                    height: 850px;
-                    .item{
-                        display: flex;
-                        align-items: center;
-                        h4{
-                            color: $state-warning-01;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .content-whatpeoplesayaboutus{
-        padding-left: 10px;
-        padding-right: 10px;
-        .content-whatpeoplesayaboutus-bottom{
-            .carousel-item-wrap{
-                .item{
-                    &:not(:first-of-type) {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-    .content-featuredproject{
-        .content-featuredproject-content{
-            row-gap: 40px;
-            grid-template-columns: auto;
-            // .item4,.item5,.item6{
-            //     display: none;
-            // }
-            .item{
-          
-                div{
-                    img{
-                        height: 350px;
-                    }
-                }
-            }
-        }
-    
-    }
-    .content-newsandblogs{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .content-theytrustus{
-        .content-theytrustus-bottom{
-            .order4,.order5{
-                display: none;
-            }
-        }
-    }
-    .content-getintouch{
-        .wrap{
-            .content-getintouch-container{
-                .content-getintouch-bottom{
-                    height: 500px;
-                    .item1{
-                        flex-direction: column;
-                        row-gap: 24px;
-                        input{
-                            height: 48px;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width:500px){
@@ -1657,61 +1221,7 @@ footer{
                 }
             }
         }
-    }
-    
-    .content-newsandblogs{
-        .content-newsandblogs-bottom-tablet{
-            height: 100%;
-            .item1{
-                display: none;
-            }
-            .item2{
-                .content{
-                    .bottom{
-                        display: block;
-                        .text{
-                            margin-top: 20px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .content-featuredproject{
-        .content-featuredproject-content{
-            .item{
-                div{
-                    img{
-                        height: 280px;
-                    }
-                }
-            }
-        }
-    
-    }
-    .content-theytrustus{
-        .content-theytrustus-bottom{
-            row-gap: 0;
-            img{
-                width: 90px;
-                height: 90px;
-            }
-        }
-    }
-    footer{
-        .footer-top{
-            .item2{
-                .quicklinks{
-                    .content{
-                        .app{
-                            width: 40%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-   
+    }  
 }
 @media screen and (max-width:400px) {
     .img{
@@ -1738,11 +1248,6 @@ footer{
     }    
 }
 @media screen and (max-width:380px){
-    .image-slide{
-        .slide-button{
-            left: 20%;
-        }
-    }
     .content-ourservices{
         .content-ourservices-bottom{
             .item{
@@ -1750,18 +1255,6 @@ footer{
                 padding: 5px;
             }
         }
-    }
-    .content-featuredproject{
-        .content-featuredproject-content{
-            .item{
-                div{
-                    img{
-                        height: 250px;
-                    }
-                }
-            }
-        }
-    
     }
    
 }
@@ -1799,25 +1292,6 @@ footer{
             }
         }
     }
-    .content-theytrustus{
-        .content-theytrustus-bottom{
-            padding: 40px 0;
-            img{
-                width: 60px;
-                height: 60px;
-            }
-        }
-    }
 }
-@media screen and (max-width:327px){
-    footer{
-        .footer-top{
-            .item2{
-                .navigation{
-                    margin-top: 22px;
-                }
-            }
-        }
-    }
-}
+
 
