@@ -613,21 +613,65 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   margin-top: 20px;
   font-weight: 600;
 }
-.reviews .carousel {
-  margin-top: 60px;
+.reviews .reviews-content {
+  margin-top: 80px;
 }
-.reviews .carousel .carousel-inner .carousel-item .carousel-item-wrap .item {
+.reviews .reviews-content .carousel-item-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+.reviews .reviews-content .carousel-item-wrap .item {
+  max-width: 304px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  row-gap: 80px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
 }
-.reviews .carousel .carousel-inner .carousel-item .carousel-item-wrap .item h1 {
-  font-size: 40px;
-  padding: 0 20px;
+.reviews .reviews-content .carousel-item-wrap .item div {
+  width: 129px;
+  height: 129px;
+  position: relative;
+  margin: auto;
 }
-.reviews .carousel .carousel-inner .carousel-item .carousel-item-wrap .item p {
-  font-size: 22px;
+.reviews .reviews-content .carousel-item-wrap .item div img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.reviews .reviews-content .carousel-item-wrap .item div .quote {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 51px;
+  height: 51px;
+}
+.reviews .reviews-content .carousel-item-wrap .item p {
+  font-family: "Jost";
+}
+.reviews .reviews-content .carousel-item-wrap .item p:first-of-type {
+  font-size: small;
+  color: #535959;
+  margin-top: 20px;
+}
+.reviews .reviews-content .carousel-item-wrap .item p:last-of-type {
+  font-size: 15px;
+  color: #535959;
+  margin-top: 20px;
+}
+.reviews .reviews-content .carousel-item-wrap .item a {
+  width: 9px;
+  height: 9px;
+  background-color: #323338;
+  margin: auto;
+  border-radius: 50%;
+}
+.reviews .reviews-content .carousel-item-wrap .item h6 {
+  font-family: "Courgette";
+  font-weight: bold;
+  color: #060810;
+  margin-top: 20px;
 }
 
 .owl-carousel-container {
@@ -884,6 +928,11 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
          column-gap: 15px;
   }
 }
+@media screen and (max-width: 1123px) {
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 210px;
+  }
+}
 @media screen and (max-width: 1100px) {
   footer .footer-top {
     display: block;
@@ -972,6 +1021,8 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   }
   .content-ourservices .content-ourservices-bottom {
     flex-direction: column;
+    row-gap: 50px;
+    margin-top: 100px;
   }
   .ftco-counter .container {
     justify-content: space-around;
@@ -1017,6 +1068,11 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   }
   .contact .contact-content .item2 {
     width: 100%;
+  }
+}
+@media screen and (max-width: 922px) {
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 140px;
   }
 }
 @media screen and (max-width: 859px) {
@@ -1072,6 +1128,16 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 747px) {
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 210px;
+  }
+}
+@media screen and (max-width: 635px) {
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 240px;
+  }
+}
 @media screen and (max-width: 620px) {
   .contact .contact-content .item1 {
     display: block;
@@ -1119,10 +1185,18 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   .content-ourservices .content-ourservices-top p:last-of-type {
     font-size: 25px;
   }
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 130px;
+  }
 }
 @media screen and (max-width: 557px) {
   .img .img-wrap .img-text p {
     width: 370px;
+  }
+}
+@media screen and (max-width: 521px) {
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 180px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1166,6 +1240,11 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   }
   .contact .contact-content .item2 .content-getintouch-center .getintouch-item1 input:last-of-type {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 280px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1212,12 +1291,17 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
     font-size: 25px;
   }
   .content-ourservices .content-ourservices-bottom {
-    margin-top: 180px;
+    margin-top: 340px;
   }
   .contact .contact-content .item1 .item .text #nores {
     display: none;
   }
   .contact .contact-content .item1 .item .text #res {
     display: block;
+  }
+}
+@media screen and (max-width: 314px) {
+  .content-ourservices .content-ourservices-bottom {
+    margin-top: 400px;
   }
 }

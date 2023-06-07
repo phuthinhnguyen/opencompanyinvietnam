@@ -563,28 +563,67 @@ nav{
         margin-top: 20px;
         font-weight: 600;
     }
-    .carousel{
-        margin-top: 60px;
-        .carousel-inner{
-            .carousel-item{
-                .carousel-item-wrap{
-                    .item{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        row-gap: 80px;
-                        h1{
-                            font-size: 40px;
-                    
-                            padding: 0 20px;
-                        }
-                        p{
-                            font-size: 22px;
-                        }
+    .reviews-content{
+        margin-top: 80px;
+        .carousel-item-wrap{
+            display: flex;
+            justify-content: space-evenly;
+            .item{
+                max-width: 304px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 30px;
+                text-align: center;
+                box-shadow: 0px 10px 30px 0px rgba(153,153,153,0.2);
+                div{
+                    width: 129px;
+                    height: 129px;
+                    position: relative;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        margin: auto;
                     }
+                    .quote{
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 51px;
+                        height: 51px;
+                    }
+                }
+                
+                p{
+                    @include font($fontJost);
+                    &:first-of-type{
+                        font-size: small;
+                        color: $dark-02;
+                        margin-top: 20px;
+                    }
+                    &:last-of-type{
+                        font-size: 15px;
+                        color: $dark-02;
+                        margin-top: 20px;
+                    }
+                }
+                a{
+                    width: 9px;
+                    height: 9px;
+                    background-color: $dark-01;
+                    margin: auto;
+                    border-radius: 50%;
+                }
+                h6{
+                    @include font($fontCourgette);
+                    font-weight: bold;
+                    color: $dark-blue-01;
+                    margin-top: 20px;
                 }
             }
         }
+
     }
 }
 
@@ -884,6 +923,13 @@ nav{
     }
    
 }
+@media screen and (max-width:1123px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+            margin-top: 210px;
+        }
+    }
+}
 @media screen and (max-width:1100px){
     footer{
         .footer-top{
@@ -993,6 +1039,8 @@ nav{
         }
         .content-ourservices-bottom{
            flex-direction: column; 
+            row-gap: 50px;
+           margin-top: 100px;
         }
     }
     .ftco-counter{
@@ -1052,6 +1100,14 @@ nav{
         }
     }
 }
+@media screen and (max-width:922px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+           margin-top: 140px;
+        }
+    }
+}
+
 @media screen and (max-width:859px){
     .img{
         .img-wrap{
@@ -1114,6 +1170,20 @@ nav{
                     font-size: 15px;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width:747px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+            margin-top: 210px;
+        }
+    }
+}
+@media screen and (max-width:635px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+            margin-top: 240px;
         }
     }
 }
@@ -1182,6 +1252,9 @@ nav{
                }
             }
         }
+        .content-ourservices-bottom{
+            margin-top: 130px;
+        }
     }
 }
 @media screen and (max-width:557px){
@@ -1193,6 +1266,13 @@ nav{
                 }
             
             }
+        }
+    }
+}
+@media screen and (max-width:521px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+            margin-top: 180px;
         }
     }
 }
@@ -1272,6 +1352,13 @@ nav{
         }
     }  
 }
+@media screen and (max-width:412px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+            margin-top: 280px;
+        }
+    }
+}
 @media screen and (max-width:400px) {
     .img{
         .img-wrap{
@@ -1336,7 +1423,7 @@ nav{
     }
     .content-ourservices{
         .content-ourservices-bottom{
-           margin-top: 180px;
+           margin-top: 340px;
         }
     }
     .contact{
@@ -1353,6 +1440,13 @@ nav{
                     }
                 }
             }
+        }
+    }
+}
+@media screen and (max-width:314px){
+    .content-ourservices{
+        .content-ourservices-bottom{
+           margin-top: 400px;
         }
     }
 }
