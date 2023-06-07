@@ -333,7 +333,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   top: 0;
   font-size: 20px;
   margin: 0;
-  width: 130px;
+  width: 530px;
   animation: imgtextp 1s;
 }
 .img-text h1 {
@@ -442,7 +442,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   font-size: 28px;
 }
 .content-ourservices .content-ourservices-top p {
-  max-width: 800px;
+  max-width: 1200px;
   margin-top: 20px;
   font-family: "Jost";
 }
