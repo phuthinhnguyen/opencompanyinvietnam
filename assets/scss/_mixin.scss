@@ -8,13 +8,13 @@
     align-items: center;
     h1{
         color: $primary-green;
-        @include font($fontJost);
+        @include font($fontCourgette);
         font-size: 28px;
     }
     p{
         max-width: 1200px;
         margin-top: 20px;
-        @include font($fontJost);
+        @include font($fontCourgette);
         &:first-of-type{
             color: black;
             font-weight: 600;
@@ -53,10 +53,10 @@
             margin-bottom: 20px;
         }
         h3{
-            @include font($fontJost);
             font-weight: bold;
         }
         p{
+            @include font($fontJost);
             color: $dark-03;
             text-align: center;
             padding: 10px;
