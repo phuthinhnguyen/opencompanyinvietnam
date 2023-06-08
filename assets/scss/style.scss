@@ -99,14 +99,25 @@ nav{
         height: 70px;
         padding: $padding;
         .left{
-            flex: 1;
+            // flex: 4;
+            width: 30%;
+            min-width: 330px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            p{
+                width: 300px;
+                display: inline-block;
+                margin: 0;
+            }
             img{
                 width: 45px;
                 height: 51px;
             }
         }
         .center{
-            flex: 7;
+            // flex: 7;
+            width: 70%;
             height: 56px;
             display: flex;
             align-items: center;
@@ -900,7 +911,9 @@ nav{
         
     }
 }
-
+@media screen and (max-width:1240px){
+    
+}
 @media screen and (max-width:1199px){
     nav{
         .row{
