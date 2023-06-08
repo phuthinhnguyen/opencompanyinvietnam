@@ -915,7 +915,23 @@ nav{
     }
 }
 @media screen and (max-width:1240px){
-
+    nav{
+        .row{
+            .center{
+                width: 65%;
+                ul{
+                    li{
+                        // margin-left: 10px;
+                        a{
+                            h6{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width:1199px){
     nav{
@@ -1012,7 +1028,25 @@ nav{
         }
     }
 }
-
+@media screen and (max-width:1084px){
+    nav{
+        .row{
+            .center{
+                width: 60%;
+                ul{
+                    li{
+                        margin-left: 20px;
+                        a{
+                            h6{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:991px){
     .top{
         display: none;
@@ -1025,7 +1059,7 @@ nav{
                 justify-content: center;
                 ul{
                     li{
-                        margin-left: 30px;
+                        // margin-left: 30px;
                         a{
                             h6{
                                 font-size: 18px;
@@ -1243,6 +1277,14 @@ nav{
             }
         }
     }
+    .aboutus{
+        .container{
+            .item1{
+                padding-right: 20px;
+                padding-left: 0;
+            }
+        }
+    }
 }
 @media screen and (max-width:747px){
     .content-ourservices{
@@ -1289,14 +1331,20 @@ nav{
             }
         }
     }
-    
-}
-@media screen and (max-width:575px){
     nav{
         .row{
             padding: 0 10px;
+            .left{
+                width: 50%;
+            }
+            .menu{
+                width: 5%;
+            }
         }
     }
+    
+}
+@media screen and (max-width:575px){
     .image-slide{
         .slide-button{
             left: 30%;
@@ -1312,6 +1360,13 @@ nav{
         }
         .content-ourservices-bottom{
             margin-top: 130px;
+        }
+    }
+    .aboutus{
+        .container{
+            .item1{
+                padding: 0;
+            }
         }
     }
 }
@@ -1374,6 +1429,9 @@ nav{
    
 }
 @media screen and (max-width:450px){
+    .aboutus{
+        background-position: center;
+    }
     .content-ourservices{
         .content-ourservices-bottom{
             .item{
@@ -1400,6 +1458,16 @@ nav{
             }
         }
     }  
+    nav{
+        .row{
+            .left{
+                min-width: 100px;
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
     
 }
 @media screen and (max-width:412px){
@@ -1438,7 +1506,6 @@ nav{
     .content-ourservices{
         .content-ourservices-bottom{
             .item{
-                width: 280px;
                 padding: 5px;
             }
         }
@@ -1474,6 +1541,9 @@ nav{
     .content-ourservices{
         .content-ourservices-bottom{
            margin-top: 340px;
+           .item{
+            width: 300px;
+           }
         }
     }
     .contact{
@@ -1489,6 +1559,13 @@ nav{
                         }
                     }
                 }
+            }
+        }
+    }
+    .reviews{
+        .reviews-content{
+            .carousel-item-wrap{
+                padding: 0 40px;
             }
         }
     }
