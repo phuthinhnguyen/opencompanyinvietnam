@@ -617,8 +617,12 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   margin-top: 80px;
 }
 .reviews .reviews-content .carousel-item-wrap {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  padding: 0 50px;
 }
 .reviews .reviews-content .carousel-item-wrap .item {
   max-width: 304px;
@@ -696,12 +700,12 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 }
 .owl-carousel-container .owl-carousel {
   padding: 70px;
-  padding-left: 150px;
   display: flex;
   justify-content: space-between;
 }
 .owl-carousel-container .owl-carousel .item img {
   width: 60%;
+  min-width: 100px;
   height: auto;
   filter: grayscale(100%);
   -webkit-user-select: none;
@@ -893,6 +897,14 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
     padding-left: 100px;
   }
 }
+@media screen and (max-width: 1350px) {
+  .reviews .reviews-content .carousel-item-wrap {
+    grid-template-columns: auto auto;
+  }
+  .reviews .reviews-content .carousel-item-wrap #reviews-res {
+    display: none;
+  }
+}
 @media screen and (max-width: 1320px) {
   nav .row .center ul li {
     margin-left: 45px;
@@ -1074,6 +1086,12 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   .content-ourservices .content-ourservices-bottom {
     margin-top: 140px;
   }
+  .reviews .reviews-content .carousel-item-wrap {
+    grid-template-columns: auto;
+  }
+  .reviews .reviews-content .carousel-item-wrap #reviews-res {
+    display: none;
+  }
 }
 @media screen and (max-width: 859px) {
   .img .img-wrap .img-text .img-text-h1 {
@@ -1193,6 +1211,14 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   .img .img-wrap .img-text p {
     width: 370px;
   }
+  .owl-carousel-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .owl-carousel-container .owl-carousel {
+    padding: 30px;
+    padding-left: 40px;
+  }
 }
 @media screen and (max-width: 521px) {
   .content-ourservices .content-ourservices-bottom {
@@ -1219,12 +1245,6 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
       display: block;
       top: 35%;
     }
-  }
-  .reviews .carousel .carousel-inner .carousel-item .carousel-item-wrap .item h1 {
-    font-size: 28px;
-  }
-  .reviews .carousel .carousel-inner .carousel-item .carousel-item-wrap .item p {
-    font-size: 22px;
   }
 }
 @media screen and (max-width: 450px) {

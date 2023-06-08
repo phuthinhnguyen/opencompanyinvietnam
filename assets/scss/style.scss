@@ -566,8 +566,13 @@ nav{
     .reviews-content{
         margin-top: 80px;
         .carousel-item-wrap{
-            display: flex;
-            justify-content: space-evenly;
+            // display: flex;
+            // justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            column-gap: 50px;
+            padding: 0 50px;
             .item{
                 max-width: 304px;
                 display: flex;
@@ -649,12 +654,12 @@ nav{
     }
     .owl-carousel{
         padding: 70px;
-        padding-left: 150px;
         display: flex;
         justify-content: space-between;
         .item{
             img{
                 width: 60%;
+                min-width: 100px;
                 height: auto;
                 filter: grayscale(100%);
                 user-select: none;
@@ -852,6 +857,19 @@ nav{
         .owl-carousel{
             padding: 30px;
             padding-left: 100px;
+        }
+    }
+}
+@media screen and (max-width:1350px){
+    .reviews{
+        .reviews-content{
+            .carousel-item-wrap{
+                grid-template-columns: auto auto;
+                #reviews-res{
+                    display: none;
+                }
+            }
+            
         }
     }
 }
@@ -1106,6 +1124,17 @@ nav{
            margin-top: 140px;
         }
     }
+    .reviews{
+        .reviews-content{
+            .carousel-item-wrap{
+                grid-template-columns: auto;
+                #reviews-res{
+                    display: none;
+                }
+            }
+            
+        }
+    }  
 }
 
 @media screen and (max-width:859px){
@@ -1268,6 +1297,14 @@ nav{
             }
         }
     }
+    .owl-carousel-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        .owl-carousel{
+            padding: 30px;
+            padding-left: 40px;
+        }
+    }
 }
 @media screen and (max-width:521px){
     .content-ourservices{
@@ -1304,24 +1341,7 @@ nav{
           
         }
     }
-    .reviews{
-        .carousel{
-            .carousel-inner{
-                .carousel-item{
-                    .carousel-item-wrap{
-                        .item{
-                            h1{
-                                font-size: 28px;
-                            }
-                            p{
-                                font-size: 22px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+   
    
 }
 @media screen and (max-width:450px){
@@ -1351,6 +1371,7 @@ nav{
             }
         }
     }  
+    
 }
 @media screen and (max-width:412px){
     .content-ourservices{
