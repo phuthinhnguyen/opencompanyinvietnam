@@ -892,6 +892,196 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   transition: transform 0.4s;
 }
 
+.service-detail-content {
+  width: 100%;
+  padding: 100px;
+}
+.service-detail-content h2 {
+  font-family: "Courgette";
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.service-detail-content .content-wrap {
+  display: flex;
+  width: 100%;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  align-items: flex-start;
+}
+.service-detail-content .content-wrap .img {
+  width: 50%;
+}
+.service-detail-content .content-wrap .img img {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+.service-detail-content .content-wrap .text {
+  width: 50%;
+  font-family: "Jost";
+  font-size: 18px;
+  text-align: left;
+}
+.service-detail-content .content-wrap .text ul li {
+  margin-top: 10px;
+}
+
+#footer-icon {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 12px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+#footer-icon i {
+  transition: 0.4s;
+  font-size: 18px;
+}
+#footer-icon:hover {
+  color: black;
+}
+#footer-icon:hover i {
+  transform: rotateY(180deg);
+}
+
+footer {
+  max-width: 100%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #CF7976;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+footer .footer-container .item1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  min-width: 250px;
+}
+footer .footer-container .item1 .item1-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer .footer-container .item1 .item1-top img {
+  width: 100px;
+  height: 138px;
+}
+footer .footer-container .item1 .item1-top .text {
+  margin-left: 5px;
+}
+footer .footer-container .item1 .item1-top .text h5 {
+  font-weight: bold;
+  font-family: "Courgette";
+  font-size: 25px;
+  color: black;
+}
+footer .footer-container .item1 .item1-top .text h5:first-of-type {
+  margin-top: 20px;
+}
+footer .footer-container .item1 .item1-bottom {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+footer .footer-container .item2 {
+  display: flex;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
+}
+footer .footer-container .item2 .contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+footer .footer-container .item2 .contactus h4 {
+  font-family: "Courgette";
+  color: white;
+  font-weight: bold;
+}
+footer .footer-container .item2 .contactus .content p {
+  font-family: "Jost";
+  color: black;
+  font-weight: 500;
+}
+footer .footer-container .item2 .contactus .content div p {
+  display: inline-block;
+}
+footer .footer-container .item2 .contactus .content div #res-footer {
+  display: none;
+}
+footer .footer-container .item2 .contactus .content div:not(:first-of-type) {
+  margin-top: 15px;
+}
+footer .footer-container .item2 .contactus .content div #footer-icon {
+  min-width: 40px;
+}
+footer .footer-container .item2 .navigation {
+  min-width: 145px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+footer .footer-container .item2 .navigation h4 {
+  font-family: "Courgette";
+  color: white;
+  font-weight: bold;
+}
+footer .footer-container .item2 .navigation .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-container .item2 .navigation .content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: "Jost";
+  font-size: 17px;
+  transition: 0.3s;
+}
+footer .footer-container .item2 .navigation .content a:hover {
+  color: white;
+}
+footer .footer-container .item2 .navigation .content a:not(:first-of-type) {
+  margin-top: 20px;
+}
+footer hr {
+  margin-top: 40px;
+}
+footer .footer-bottom {
+  height: 122px;
+  margin-top: 40px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer-bottom p {
+  font-family: "Jost";
+  color: #fff;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 1700px) {
   .img .img-wrap .img-text {
     left: 40px;
@@ -970,6 +1160,9 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   .ftco-counter .container {
     -moz-column-gap: 15px;
          column-gap: 15px;
+  }
+  footer .footer-container .item2 .navigation {
+    display: none;
   }
 }
 @media screen and (max-width: 1123px) {
@@ -1077,6 +1270,32 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   }
   .ftco-counter .container {
     justify-content: space-around;
+  }
+  .service-detail-content {
+    padding: 70px 30px;
+  }
+  .service-detail-content .content-wrap {
+    display: block;
+  }
+  .service-detail-content .content-wrap .img {
+    width: 100%;
+  }
+  .service-detail-content .content-wrap .img img {
+    min-height: 150px;
+    max-height: 500px;
+    height: auto;
+  }
+  .service-detail-content .content-wrap .text {
+    width: 100%;
+    margin-top: 40px;
+  }
+  footer .footer-container {
+    padding-left: 20px;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  footer .footer-container .item2 {
+    padding-left: 10px;
   }
 }
 @media screen and (max-width: 935px) {
@@ -1244,6 +1463,13 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   nav .row .menu {
     width: 5%;
   }
+  footer .footer-container .item2 .contactus .content div {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer-container .item2 .contactus .content div p {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 575px) {
   .image-slide .slide-button {
@@ -1322,6 +1548,11 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
     display: none;
   }
 }
+@media screen and (max-width: 420px) {
+  footer .footer-container .item1 .item1-top {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 412px) {
   .content-ourservices .content-ourservices-bottom {
     margin-top: 280px;
@@ -1348,6 +1579,15 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 @media screen and (max-width: 380px) {
   .content-ourservices .content-ourservices-bottom .item {
     padding: 5px;
+  }
+  footer .footer-container .item2 .contactus {
+    padding-right: 20px;
+  }
+  footer .footer-container .item2 .contactus .content div #res-footer {
+    display: block;
+  }
+  footer .footer-container .item2 .contactus .content div #nores-footer {
+    display: none;
   }
 }
 @media screen and (max-width: 360px) {

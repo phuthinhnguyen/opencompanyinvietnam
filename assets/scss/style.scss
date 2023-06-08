@@ -852,6 +852,212 @@ nav{
     transition: transform 0.4s;
 }
 
+// service-detail-content
+.service-detail-content{
+    width: 100%;
+    padding: 100px;
+    h2{
+        @include font($fontCourgette);
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+    .content-wrap{
+        display: flex;
+        width: 100%;
+        column-gap: 24px;
+        align-items: flex-start;
+        .img{
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                min-height: 400px;
+            }
+        }
+        .text{
+            width: 50%;
+            @include font($fontJost);
+            font-size: 18px;
+            text-align: left;
+            ul{
+                li{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+#footer-icon{
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 12px;
+    border: 1px solid white;
+    cursor: pointer;
+    i{
+        transition: .4s;
+        font-size: 18px;
+    }
+    &:hover{
+        // color: #9F78FF;
+        color: black;
+        i{
+            transform: rotateY(180deg);
+        }
+    }
+}
+footer{
+    // height: 589px;
+    max-width: $max-width-homepage;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $primary-green;
+    .footer-container{
+        // height: 307px;
+        display: flex;
+        justify-content: space-between;
+        padding: $padding;
+        column-gap: 20px;
+        .item1{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            // max-width: 345px;
+            min-width: 250px;
+            .item1-top{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                img{
+                    width: 100px;
+                    height: 138px;
+                } 
+                .text{
+                    margin-left: 5px;
+                    h5{
+                        font-weight: bold;
+                        @include font($fontCourgette);
+                        font-size: 25px;
+                        color: black;
+                        &:first-of-type{
+                            margin-top: 20px;
+                        }
+                    }
+                }   
+            }
+            .item1-bottom{
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+           
+            
+        }
+        .item2{
+            // height: 252px;
+            display: flex;
+            column-gap: 56px;
+            .contactus{
+                // height: 224px;
+                // max-width: 254px;
+                // min-width: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                row-gap: 20px;
+                h4{
+                    @include font($fontCourgette);
+                    color: white;
+                    font-weight: bold;
+                }
+                .content{
+                    p{
+                        @include font($fontJost);
+                        color: black;
+                        font-weight: 500;
+                    }
+                    div{
+                        p{
+                            display: inline-block;
+                        }
+                        #res-footer{
+                            display: none;
+                        }
+                        &:not(:first-of-type){
+                            margin-top: 15px;
+                        }
+                        #footer-icon{
+                            min-width: 40px;
+                        }
+                       
+                    }
+                }
+            }
+            .navigation{
+                // max-width: 141px;
+                min-width: 145px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                row-gap: 20px;
+                h4{
+                    @include font($fontCourgette);
+                    color: white;
+                    font-weight: bold;
+                }
+                .content{
+                    // height: 196px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 500;
+                        @include font($fontJost);
+                        font-size: 17px;
+                        transition: 0.3s;
+                        &:hover{
+                            color: white;
+                        }  
+                        &:not(:first-of-type){
+                            margin-top: 20px;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        margin-top: 40px;
+    }
+    .footer-bottom{
+        height: 122px;
+        margin-top: 40px;
+        padding: $padding;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            @include font($fontJost);
+            color: #fff;
+            font-size: small;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+ 
 @media screen and (max-width:1700px){
     .img{
         .img-wrap{
@@ -982,6 +1188,15 @@ nav{
     .ftco-counter{
         .container{
             column-gap: 15px;
+        }
+    }
+    footer{
+        .footer-container{
+            .item2{
+                .navigation{
+                    display: none;
+                }
+            }
         }
     }
    
@@ -1127,6 +1342,35 @@ nav{
     .ftco-counter{
         .container{
             justify-content: space-around;
+        }
+    }
+    .service-detail-content{
+        padding: 70px 30px;
+        .content-wrap{
+            display: block;
+            .img{
+                width: 100%;
+                img{
+                    min-height: 150px;
+                    max-height: 500px;
+                    height: auto;
+                }
+            }
+            .text{
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+    }
+    footer{
+        
+        .footer-container{
+            padding-left: 20px;
+            flex-direction: column;
+            row-gap: 40px;
+            .item2{
+                padding-left: 10px;
+            }
         }
     }
 }
@@ -1342,6 +1586,26 @@ nav{
             }
         }
     }
+    footer{
+        .footer-container{
+            .item2{
+                .contactus{
+                    .content{
+                        div{
+                            display: flex;
+                            align-items: center;
+                            a{
+                               
+                            }
+                            p{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     
 }
 @media screen and (max-width:575px){
@@ -1470,6 +1734,17 @@ nav{
     }
     
 }
+@media screen and (max-width:420px){
+    footer{
+        .footer-container{
+           .item1{
+            .item1-top{
+                flex-direction: column;
+            }
+           }
+        }
+    }
+}
 @media screen and (max-width:412px){
     .content-ourservices{
         .content-ourservices-bottom{
@@ -1507,6 +1782,25 @@ nav{
         .content-ourservices-bottom{
             .item{
                 padding: 5px;
+            }
+        }
+    }
+    footer{
+        .footer-container{
+            .item2{
+                .contactus{
+                    padding-right: 20px;
+                    .content{
+                        div{
+                            #res-footer{
+                                display: block;
+                            }
+                            #nores-footer{
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
