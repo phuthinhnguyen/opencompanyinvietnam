@@ -335,12 +335,14 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   margin: 0;
   width: 500px;
   animation: imgtextp 1s;
+  color: white;
 }
 .img-text h1 {
   font-size: 100px;
   margin: 0;
   font-weight: 400;
   font-family: "Courgette";
+  color: white;
 }
 .img-text a {
   font-size: 15px;
@@ -408,6 +410,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .img-text-recotton > p {
   display: inline-block;
   margin-right: 10px;
+  color: white;
 }
 .img-text-recotton a {
   border-bottom: 2px solid black;
@@ -577,23 +580,25 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .aboutus .container {
   display: flex;
 }
-.aboutus .container .item {
-  width: 50%;
-  padding-right: 180px;
+.aboutus .container .item1 {
+  width: 60%;
   text-align: justify;
 }
-.aboutus .container .item h4 {
+.aboutus .container .item1 h4 {
   color: #CF7976;
   font-size: 28px;
 }
-.aboutus .container .item h1 {
+.aboutus .container .item1 h1 {
   margin-top: 20px;
   font-weight: 600;
 }
-.aboutus .container .item p {
+.aboutus .container .item1 p {
   margin-top: 30px;
   font-size: 20px;
   font-family: "Jost";
+}
+.aboutus .container .item2 {
+  width: 40%;
 }
 
 .reviews {
@@ -702,17 +707,17 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   padding: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .owl-carousel-container .owl-carousel .item {
-  width: 150px;
-  height: 150px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .owl-carousel-container .owl-carousel .item img {
   width: 100%;
-  min-width: 100px;
+  max-width: 200px;
   height: auto;
   filter: grayscale(100%);
   -webkit-user-select: none;
@@ -901,7 +906,6 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   }
   .owl-carousel-container .owl-carousel {
     padding: 30px;
-    padding-left: 100px;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -962,23 +966,22 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   footer .footer-top .item2 .quicklinks .content .app {
     width: 30%;
   }
-}
-@media screen and (max-width: 1050px) {
   .aboutus {
     background-size: cover;
   }
   .aboutus .container {
     flex-direction: column;
   }
-  .aboutus .container .item {
+  .aboutus .container .item1 {
     width: 100%;
-    padding-right: 0;
+    padding-left: 70px;
+    padding-right: 110px;
   }
-  .aboutus .container .item h1 {
+  .aboutus .container .item1 h1 {
     width: 100%;
     text-align: center;
   }
-  .aboutus .container .item h4 {
+  .aboutus .container .item1 h4 {
     text-align: center;
   }
 }
@@ -1224,7 +1227,6 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   }
   .owl-carousel-container .owl-carousel {
     padding: 30px;
-    padding-left: 40px;
   }
 }
 @media screen and (max-width: 521px) {

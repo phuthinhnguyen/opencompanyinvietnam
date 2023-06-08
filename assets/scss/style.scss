@@ -341,12 +341,14 @@ nav{
 		margin: 0;
 		width: 500px;
 		animation: imgtextp 1s;
+        color: white;
 	}
 	h1 {
 		font-size: 100px;
 		margin: 0;
 		font-weight: 400;
         @include font($fontCourgette);
+        color: white;
 	}
 	a {
         @keyframes imgtexta {
@@ -394,6 +396,7 @@ nav{
 	top: 15%;
 	animation: imgtexth1 3s;
 	width: 800px;
+   
 }
 .img-text-recotton {
     @keyframes imgtextrecotton {
@@ -412,6 +415,7 @@ nav{
 	>p {
 		display: inline-block;
 		margin-right: 10px;
+        color: white;
 	}
 	a {
 		border-bottom: 2px solid black;
@@ -516,7 +520,7 @@ nav{
     z-index: -1; 
     // height: 700px;
     // min-height: 206px;
-    max-width: $max-width-homepage ;
+    max-width: $max-width-homepage;
     margin: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -525,9 +529,9 @@ nav{
     background-size: contain;
     .container{
         display: flex;
-        .item{
-            width: 50%;
-            padding-right: 180px;
+        .item1{
+            width: 60%;
+            // padding-right: 180px;
             text-align: justify;
             h4{
                 color: $primary-green;
@@ -542,6 +546,9 @@ nav{
                 font-size: 20px;
                 @include font($fontJost);
             }
+        }
+        .item2{
+            width: 40%;
         }
     }
 }
@@ -656,15 +663,16 @@ nav{
         padding: 70px;
         display: flex;
         justify-content: center;
+        align-items: center;
         .item{
-            width: 150px;
-            height: 150px;
+            // width: 250px;
+            height: 250px;
             display: flex;
             justify-content: center;
             align-items: center;
             img{
                 width: 100%;
-                min-width: 100px;
+                max-width: 200px;
                 height: auto;
                 filter: grayscale(100%);
                 user-select: none;
@@ -861,7 +869,7 @@ nav{
         padding-right: 20px;
         .owl-carousel{
             padding: 30px;
-            padding-left: 100px;
+            // padding-left: 100px;
         }
     }
 }
@@ -969,15 +977,14 @@ nav{
             }
         }
     }
-}
-@media screen and (max-width:1050px){
     .aboutus{
         background-size: cover;
         .container{
             flex-direction: column;
-            .item{
+            .item1{
                 width: 100%;
-                padding-right: 0;
+                padding-left: 70px;
+                padding-right: 110px;
                 h1{
                     width: 100%;
                     text-align: center;
@@ -989,6 +996,7 @@ nav{
         }
     }
 }
+
 @media screen and (max-width:991px){
     .top{
         display: none;
@@ -1307,7 +1315,7 @@ nav{
         padding-right: 20px;
         .owl-carousel{
             padding: 30px;
-            padding-left: 40px;
+            // padding-left: 40px;
         }
     }
 }
