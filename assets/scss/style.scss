@@ -109,6 +109,9 @@ nav{
                 width: 300px;
                 display: inline-block;
                 margin: 0;
+                @include font($fontJost);
+                color: $dark-03;
+                font-weight: 500;
             }
             img{
                 width: 45px;
@@ -912,7 +915,7 @@ nav{
     }
 }
 @media screen and (max-width:1240px){
-    
+
 }
 @media screen and (max-width:1199px){
     nav{
