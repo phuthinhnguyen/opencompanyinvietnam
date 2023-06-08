@@ -241,7 +241,7 @@ nav{
                         color: $primary-green;
                     }
                     h5{
-                        @include font($fontJost);
+                        @include font($fontCourgette);
                         transition: 0.3s;
                         color: $dark-blue-01;
                         font-weight: bold;
@@ -655,10 +655,15 @@ nav{
     .owl-carousel{
         padding: 70px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         .item{
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
-                width: 60%;
+                width: 100%;
                 min-width: 100px;
                 height: auto;
                 filter: grayscale(100%);
@@ -1166,7 +1171,20 @@ nav{
         padding-right: 20px;
     }
 }
-
+@media screen and (max-width:790px) {
+    .contact{
+        .contact-content{
+            .item1{
+                display: block;
+                .item{
+                    &:last-of-type{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:767px){
     .img{
         .img-wrap{
@@ -1216,20 +1234,7 @@ nav{
         }
     }
 }
-@media screen and (max-width:620px) {
-    .contact{
-        .contact-content{
-            .item1{
-                display: block;
-                .item{
-                    &:last-of-type{
-                        margin-top: -20px;
-                    }
-                }
-            }
-        }
-    }
-}
+
 @media screen and (max-width:600px) {
     .img{
         .img-wrap{

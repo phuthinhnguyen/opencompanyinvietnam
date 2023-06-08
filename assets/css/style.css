@@ -22,7 +22,7 @@ input, button, textarea {
   max-width: 100%;
   height: 56px;
   margin: auto;
-  background-color: #9e3ffd;
+  background-color: #CF7976;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,10 +145,10 @@ nav .row .center ul li a h6 img {
   width: 14px;
   height: 7px;
   margin-left: 22px;
-  color: #9e3ffd;
+  color: #CF7976;
 }
 nav .row .center ul li a:hover {
-  color: #9e3ffd;
+  color: #CF7976;
 }
 nav .row .center ul li .menu-dropdown {
   display: none;
@@ -157,7 +157,7 @@ nav .row .center ul li .menu-dropdown {
   padding: 20px;
   top: 20px;
   left: -20px;
-  border-bottom: 5px solid #9e3ffd;
+  border-bottom: 5px solid #CF7976;
 }
 nav .row .center ul li .menu-dropdown .menu-dropdown-item .menu-dropdown-item-content {
   cursor: pointer;
@@ -239,16 +239,16 @@ nav .row .offcanvas .offcanvas-header-bottom a {
   text-decoration: none;
 }
 nav .row .offcanvas .offcanvas-header-bottom a:first-of-type {
-  color: #9e3ffd;
+  color: #CF7976;
 }
 nav .row .offcanvas .offcanvas-header-bottom a h5 {
-  font-family: "Jost";
+  font-family: "Courgette";
   transition: 0.3s;
   color: #060810;
   font-weight: bold;
 }
 nav .row .offcanvas .offcanvas-header-bottom a:hover h5 {
-  color: #9e3ffd;
+  color: #CF7976;
 }
 nav .row .offcanvas .offcanvas-header-bottom .language {
   width: 128px;
@@ -368,7 +368,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   }
 }
 .img-text a:hover {
-  background-color: #9e3ffd;
+  background-color: #CF7976;
   color: white;
   border: none;
 }
@@ -438,7 +438,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   align-items: center;
 }
 .content-ourservices .content-ourservices-top h1 {
-  color: #9e3ffd;
+  color: #CF7976;
   font-family: "Courgette";
   font-size: 28px;
 }
@@ -548,7 +548,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .ftco-counter .container .item .text strong.number {
   font-weight: bold;
   font-size: 40px;
-  color: #9e3ffd;
+  color: #CF7976;
   display: block;
 }
 .ftco-counter .container .item .text strong.number::after {
@@ -583,7 +583,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   text-align: justify;
 }
 .aboutus .container .item h4 {
-  color: #9e3ffd;
+  color: #CF7976;
   font-size: 28px;
 }
 .aboutus .container .item h1 {
@@ -606,7 +606,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   font-family: "Courgette";
 }
 .reviews h4 {
-  color: #9e3ffd;
+  color: #CF7976;
   font-size: 28px;
 }
 .reviews h1 {
@@ -686,7 +686,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   padding-bottom: 80px;
   text-align: center;
   font-family: "Courgette";
-  color: #9e3ffd;
+  color: #CF7976;
 }
 .owl-carousel-container h4 {
   font-size: 30px;
@@ -701,10 +701,17 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .owl-carousel-container .owl-carousel {
   padding: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.owl-carousel-container .owl-carousel .item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .owl-carousel-container .owl-carousel .item img {
-  width: 60%;
+  width: 100%;
   min-width: 100px;
   height: auto;
   filter: grayscale(100%);
@@ -726,7 +733,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   font-family: "Courgette";
 }
 .contact h4 {
-  color: #9e3ffd;
+  color: #CF7976;
   font-size: 28px;
   text-align: center;
 }
@@ -759,7 +766,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .contact .contact-content .item1 .item .text h5 {
   font-family: "Courgette";
   font-weight: bold;
-  color: #9e3ffd;
+  color: #CF7976;
 }
 .contact .contact-content .item1 .item .text h6 {
   font-family: "Jost";
@@ -781,8 +788,8 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   border: 1px solid #9AA0A0;
 }
 .contact .contact-content .item2 .content-getintouch-center input:focus {
-  border: 1px solid #9e3ffd;
-  outline: 1px solid #9e3ffd;
+  border: 1px solid #CF7976;
+  outline: 1px solid #CF7976;
 }
 .contact .contact-content .item2 .content-getintouch-center .getintouch-item1 {
   display: flex;
@@ -815,8 +822,8 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   border: 1px solid #9AA0A0;
 }
 .contact .contact-content .item2 .content-getintouch-center .getintouch-item3 textarea:focus {
-  border: 1px solid #9e3ffd;
-  outline: 1px solid #9e3ffd;
+  border: 1px solid #CF7976;
+  outline: 1px solid #CF7976;
 }
 .contact .contact-content .item2 .content-getintouch-bottom {
   display: flex;
@@ -825,7 +832,7 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .contact .contact-content .item2 .content-getintouch-bottom button {
   margin-top: 41px;
   height: 59px;
-  background-color: #9e3ffd;
+  background-color: #CF7976;
   width: 181px;
   color: #fff;
   font-family: "Courgette";
@@ -1113,6 +1120,14 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 790px) {
+  .contact .contact-content .item1 {
+    display: block;
+  }
+  .contact .contact-content .item1 .item:last-of-type {
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img .img-wrap .img-text p {
     font-size: 16px;
@@ -1154,14 +1169,6 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 @media screen and (max-width: 635px) {
   .content-ourservices .content-ourservices-bottom {
     margin-top: 240px;
-  }
-}
-@media screen and (max-width: 620px) {
-  .contact .contact-content .item1 {
-    display: block;
-  }
-  .contact .contact-content .item1 .item:last-of-type {
-    margin-top: -20px;
   }
 }
 @media screen and (max-width: 600px) {
