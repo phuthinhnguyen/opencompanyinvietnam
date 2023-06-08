@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="assets/css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/HTMLImporter.js"></script>
+    <script src="assets/js/language.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/image/index/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title>H.S International Investment and Consulting</title>
+    <style>
+        @font-face {
+            font-family: "Jost";
+            src: url("assets/font/Jost/Jost-VariableFont_wght.ttf");
+        }
+        @font-face {
+            font-family: "Courgette";
+            src: url("assets/font/Courgette/Courgette-Regular.ttf");
+        }
+    </style>
+</head>
+<body>
+    <!-- top -->
+    <script>HTMLImporter.import("menu.html");</script>
+
+
+    <!-- img -->
+    <div class="img">
+        <div class="img-nav">
+            <a href="javascript:currentSlide(0)" class="img-nav-button"></a>
+            <a href="javascript:currentSlide(1)" class="img-nav-button"></a>
+            <a href="javascript:currentSlide(2)" class="img-nav-button"></a>
+        </div>
+        <div class="img-wrap">
+            <img src="assets/image/index/img-backgroud.jpeg" alt="">
+            <div class="img-text">
+                <p>H.S International Investment and Consulting Company</p>
+                <div class="img-text-h1">
+                    <h1>Company</h1><h1>registration</h1><h1>in Vietnam</h1>
+                </div>
+                <!-- <a href="">See more</a> -->
+            </div>
+            <div class="img-text-recotton">
+                <!-- <p>H.S Company &nbsp;|</p><a href="">See more</a> -->
+                <p>H.S &nbsp;| Welcome to us !</p>
+            </div>
+        </div>
+        <div class="img-wrap">
+            <img src="assets/image/index/img-backgroud.jpeg" alt="">
+            <div class="img-text">
+                <p>H.S International Investment and Consulting Company</p>
+                <div class="img-text-h1">
+                    <h1>Long terms</h1><h1>visa service</h1><h1>for investors</h1>
+                </div>
+                <!-- <a href="">See more</a> -->
+            </div>
+            <div class="img-text-recotton">
+                <!-- <p>H.S Company &nbsp;|</p><a href="">See more</a> -->
+                <p>H.S &nbsp;| Welcome to us !</p>
+            </div>
+        </div>
+        <div class="img-wrap">
+            <img src="assets/image/index/img-backgroud.jpeg" alt="">
+            <div class="img-text">
+                <p>H.S International Investment and Consulting Company</p>
+                <div class="img-text-h1">
+                    <h1>Tax and</h1><h1>Accounting</h1><h1>Service</h1>
+                </div>
+                <!-- <a href="">See more</a> -->
+            </div>
+            <div class="img-text-recotton">
+                <!-- <p>H.S Company &nbsp;|</p><a href="">See more</a> -->
+                <p>H.S &nbsp;| Welcome to us !</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let imgslide = document.getElementsByClassName("img-wrap");
+        let imgnav = document.getElementsByClassName("img-nav-button");
+        let index=1;
+        for (let i=0;i<imgslide.length;i++){
+                imgslide[i].style.display="none";
+            }
+        imgslide[0].style.display="block";
+        imgnav[0].style.backgroundColor  = "white";
+        imgnav[0].style.border  = "1px solid black";
+
+        function slide(){
+            for (let i=0;i<imgslide.length;i++){
+                imgslide[i].style.display="none";
+                imgnav[i].style.backgroundColor  = "black";
+            }
+            imgslide[index].style.display="block";
+            imgnav[index].style.backgroundColor="white";
+            imgnav[index].style.border  = "1px solid black";
+        
+            if (index==imgslide.length-1){
+                index=0;
+            }
+            else index++;
+        }
+        function currentSlide(currentindex){
+            for (let i=0;i<imgslide.length;i++){
+                imgslide[i].style.display="none";
+                imgnav[i].style.backgroundColor  = "black";
+            }
+            index=currentindex;
+            imgslide[index].style.display="block";
+            imgnav[index].style.backgroundColor="white";
+            imgnav[index].style.border  = "1px solid black";
+        
+        }
+        setInterval(slide,5000); 
+    </script>
+
+</body>
