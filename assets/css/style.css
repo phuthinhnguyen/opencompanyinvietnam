@@ -929,6 +929,19 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   font-family: "Jost";
   font-size: 18px;
 }
+.service-detail-content .content-text .zigzag {
+  border-collapse: separate;
+  border-spacing: 0.25em 1em;
+}
+.service-detail-content .content-text .zigzag tbody tr:nth-child(odd) {
+  transform: rotate(1deg);
+  background-color: #CF7976;
+}
+.service-detail-content .content-text .zigzag thead tr,
+.service-detail-content .content-text .zigzag tbody tr:nth-child(even) {
+  transform: rotate(-3deg);
+  background-color: #DDD3D3;
+}
 
 #footer-icon {
   color: white;
