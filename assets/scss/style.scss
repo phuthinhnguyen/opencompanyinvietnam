@@ -886,6 +886,10 @@ nav{
             }
         }
     }
+    .content-text{
+        @include font($fontJost);
+        font-size: 18px;
+    }
 }
 
 #footer-icon{
