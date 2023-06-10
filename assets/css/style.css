@@ -1583,6 +1583,9 @@ footer .footer-bottom p {
   .content-ourservices .content-ourservices-bottom {
     margin-top: 280px;
   }
+  .toast-container-res {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 400px) {
   .img .img-wrap .img-text p {
