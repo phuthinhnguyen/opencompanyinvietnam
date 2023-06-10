@@ -26,6 +26,42 @@
             font-family: "Courgette";
             src: url("assets/font/Courgette/Courgette-Regular.ttf");
         }
+        .service-detail-content .content-wrap .text{
+            min-height: 700px;
+            /* display: block; */
+        }
+        .service-detail-content .content-wrap .img img{
+            min-height: 700px;
+        }
+        .service-detail-content .content-wrap .text .text-content ul li{
+            margin-top: 10px;
+        }
+        .service-detail-content .content-text{
+                margin-top: 40px;
+        }
+        .service-detail-content .content-text h4{
+            margin-top: 30px;
+        }
+        @media screen and (max-width:1199px) {
+            .service-detail-content .content-wrap{
+                flex-direction: column;
+            }
+            .service-detail-content .content-text{
+                margin-top: 0;
+            }
+            .service-detail-content .content-wrap .img{
+                width: 100%;
+            }
+            .service-detail-content .content-wrap .img img{
+                min-height: 0;
+            }
+            .service-detail-content .content-wrap .text{
+                width: 100%;
+                min-height: 0;
+                margin-top: 30px;
+            }
+          
+        }
     </style>
 </head>
 <body>
@@ -124,22 +160,51 @@
 
     <!-- service-detail-content -->
     <div class="service-detail-content">
-        <h2>Comany Registration in Vietnam and Long terms Visa</h2>
+        <h2>Tax and Accounting Service</h2>
         <div class="content-wrap">
             <div class="img">
-                <img src="assets/image/index/business-service-detail.jpeg" alt="">
+                <img src="assets/image/index/tax-service-detail.jpg" alt="">
             </div>
             <div class="text">
                 <div class="text-content">
-                    <p>While Vietnam is a highly attractive investment destination for foreign investors, it still has a complex legal process for establishing a company.</p>
-                    <p>That’s why we are here to help your company, with our service we will provide you a full quotation which included everything needed for your company setting up in Vietnam, one time fee only and no more hidden fee.</p>
-                    <p>Each business will require different company license to run so it will help us a lot for getting more details from your requirements then we can prepare a quotation for you.</p>
-                    <p>Our fee will included Investment License and Enterprise License, tax registration, company bank accounts and 12 months virtual office.</p>
+                    <p>Besides the concern of finding a great place to create your company, the Taxation in Vietnam is always the biggest concern when you choose Vietnam to open your business. With the information below, we hope it will give you a summary on how it works in Vietnam:</p>
+                    <h4>1. Corporate Income Tax</h4>
+                    <p>The standard Corporate Income Tax (CIT) rate applicable to enterprises in Vietnam is 20% on assessable income. Tax rates for the oil and gas, and other extractive industries, can vary from 32% - 50%.</p>
+                    <p>CIT Payable = [Assessable Income - Deduction for establishing a Science and Technology Fund] x CIT Rate
+                        Assessable Income = Total Revenue - Deductible Expenses + Other Income - Carried Forward Losses - Tax-Exempted Income.
+                    </p>
+                    <p>To be deductible, expenses must:</p>
+                    <ul>
+                        <li>Relate to the generation of revenue</li>
+                        <li>Be incurred in relation to business activities as
+                            permitted with the company’s business license
+                        </li>
+                        <li>Be supported by appropriate invoices or relevant
+                            documents
+                        </li>
+                        <li>Where expenses are VND20 million and above, be
+                            settled by non-cash payment (i.e., bank transfer)
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="content-text">
-            <p class="mt-4">This is the steps to open your company in Vietnam:</p>
+            <h4>2. Value Added Tax </h4>
+            <p>Goods and services (including goods and services purchased from foreign sources) used for the purposes of production, trading and consumption in Vietnam are subject to Value Added Tax (VAT).</p>
+            <h4>3. Foreign Contractor Withholding Taxes </h4>
+            <p>Foreign business organizations, with or without a Permanent Establishment (PE) in Vietnam, that:</p>
+            <ul>
+                <li>ave income derived from Vietnam from contracts entered into with Vietnamese parties, or</li>
+                <li>Undertake business in Vietnam</li>
+            </ul>
+            <p>are subject to CIT and VAT applied on payments. Combined, these tax obligations on payments are referred to as Foreign Contractor Withholding Tax (FCWT). Note that payments to foreign individuals may be subject to Personal Income Tax under the FCWT provisions.</p>
+            <p>Although technically not a separate tax, FCWT is a term used to describe the combined taxation applied to payments to foreign contractors and the process to withhold and remit the taxes arising.</p>
+            <h4>4. Tax and Accounting Service Package from H.S</h4>
+            <p>We will provide the Tax and Accounting Service for your company with a reasonable price.</p>
+            <p>For small company with less than 10 billion VND capital, you will need to do tax report per quarter (3 months).</p>
+            <p>For large company with more than 10 billion VND capital, you will need to do the tax report per month.</p>
+            <p>This is the scope of work we will provide for taxation things:</p>
             <table class="table table-hover table-bordered">
                 <thead>
                   <tr>
@@ -150,92 +215,50 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Consular legalize and translate foreign documents related to foreign investor</td>
+                    <td>Book-keeping</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>Draft and submit dossiers for Investment Certificate at DPI HCMC</td>
+                    <td>Consulting on building of a accounting process and vouchers delivery</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td>Follow-up with officer to update the status of dossiers</td>
+                    <td>Checking invoices and documents</td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td>Obtain and hand-over the Investment Certificate to the Clients</td>
+                    <td>Classifying and sort of accounting documents</td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
-                    <td>Draft and submit dossiers for Business Registration Certificate at DPI HCMC</td>
+                    <td>Recording incurred expenses</td>
                   </tr>
                   <tr>
                     <th scope="row">6</th>
-                    <td>Follow-up with officer to update the status of dossiers</td>
+                    <td>Making quarterly financial statements (if the customer requests)/annual financial statements: Trial Balance, Balance Sheet, Statements of profit and loss, Disclosure notes (separate fee)</td>
                   </tr>
                   <tr>
                     <th scope="row">7</th>
-                    <td>Obtain and hand-over the Business Registration Certificate to the Clients</td>
+                    <td>Printing accounting books and filling documents</td>
                   </tr>
                   <tr>
                     <th scope="row">8</th>
-                    <td>Make the stamp for the enterprise</td>
+                    <td>Performing quarterly financial statements (as the Client’s requests)/annual financial statements (separate fee)</td>
                   </tr>
                   <tr>
                     <th scope="row">9</th>
-                    <td>Publish enterprise's information on the National Enterprise Portal</td>
+                    <td>Appointing a staff as a chief accountant (separate fee if the customer request)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Payroll</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>Company and Employee Insurance </td>
                   </tr>
                 </tbody>
             </table>
-            <p class="mt-5">After finish setting up your company, we know your next concern will be about the long
-                term visa, don’t worry with our 6 years experienced we are here to help ! There will be 3
-                types of visa for investor in Vietnam that you need to follow :</p>
-                <table class="table table-hover table-bordered">
-                    <thead class="text-center">
-                      <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Visa Type For Investor</th>
-                        <th scope="col">Requirements</th>
-                        <th scope="col">Fee</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">01</th>
-                        <td>Business Visa 3 months</td>
-                        <td>Sponsored by your own
-                            company, if you are holding
-                            the tourist visa you must
-                            change to business visa
-                            before apply the investor visa</td>
-                        <td>Depends on
-                            your nationality</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">02</th>
-                        <td>Investor visa 6/12 months</td>
-                        <td>You must hold a business visa
-                            sponsored by your own
-                            company first then you can
-                            apply 6/12 months investor
-                            visa. Your company capital
-                            must around 700 million VND
-                            to apply this one</td>
-                        <td>Depends on your
-                            nationality</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">03</th>
-                        <td>Temporary Residence Card 2 years</td>
-                        <td>Your company capital must
-                            over 3 billion VND for apply
-                            this one OR you can apply a
-                            Work Permit as Director and
-                            convert into TRC 2 years later</td>
-                        <td>Depends on your
-                            nationality</td>
-                      </tr>
-                    </tbody>
-                  </table>
         </div>
     </div>
 

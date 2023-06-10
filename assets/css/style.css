@@ -532,6 +532,13 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 .content-ourservices .content-ourservices-bottom .item div {
   padding-top: 90px;
 }
+.content-ourservices .content-ourservices-bottom .item div p:first-of-type {
+  min-height: 115px;
+}
+.content-ourservices .content-ourservices-bottom .item div p:last-of-type {
+  color: #CF7976;
+  font-size: 18px;
+}
 
 #section-counter {
   position: relative;
@@ -910,37 +917,30 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 }
 .service-detail-content .content-wrap .img {
   width: 50%;
+  height: 100%;
 }
 .service-detail-content .content-wrap .img img {
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  max-height: 600px;
+  border-radius: 20px;
 }
 .service-detail-content .content-wrap .text {
   width: 50%;
+  height: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-detail-content .content-wrap .text .text-content {
   font-family: "Jost";
   font-size: 18px;
   text-align: left;
 }
-.service-detail-content .content-wrap .text ul li {
-  margin-top: 10px;
-}
 .service-detail-content .content-text {
   font-family: "Jost";
   font-size: 18px;
-}
-.service-detail-content .content-text .zigzag {
-  border-collapse: separate;
-  border-spacing: 0.25em 1em;
-}
-.service-detail-content .content-text .zigzag tbody tr:nth-child(odd) {
-  transform: rotate(1deg);
-  background-color: #CF7976;
-}
-.service-detail-content .content-text .zigzag thead tr,
-.service-detail-content .content-text .zigzag tbody tr:nth-child(even) {
-  transform: rotate(-3deg);
-  background-color: #DDD3D3;
 }
 
 #footer-icon {
@@ -1182,6 +1182,11 @@ footer .footer-bottom p {
     display: none;
   }
 }
+@media screen and (max-width: 1136px) {
+  .content-ourservices .content-ourservices-bottom .item div p:first-of-type {
+    min-height: 140px;
+  }
+}
 @media screen and (max-width: 1123px) {
   .content-ourservices .content-ourservices-bottom {
     margin-top: 210px;
@@ -1285,6 +1290,9 @@ footer .footer-bottom p {
     row-gap: 50px;
     margin-top: 100px;
   }
+  .content-ourservices .content-ourservices-bottom .item div p:first-of-type {
+    min-height: 110px;
+  }
   .ftco-counter .container {
     justify-content: space-around;
   }
@@ -1305,6 +1313,7 @@ footer .footer-bottom p {
   .service-detail-content .content-wrap .text {
     width: 100%;
     margin-top: 40px;
+    min-height: 0;
   }
   footer .footer-container {
     padding-left: 20px;
