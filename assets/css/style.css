@@ -1008,7 +1008,7 @@ footer .footer-container .item1 .item1-top .text h5 {
   color: black;
 }
 footer .footer-container .item1 .item1-top .text h5:first-of-type {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 footer .footer-container .item1 .item1-bottom {
   margin-top: 20px;
@@ -1577,6 +1577,9 @@ footer .footer-bottom p {
 @media screen and (max-width: 420px) {
   footer .footer-container .item1 .item1-top {
     flex-direction: column;
+  }
+  footer .footer-container .item1 .item1-top .text h5:first-of-type {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 412px) {
