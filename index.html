@@ -26,7 +26,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
     <link rel="preload" as="font">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Khong dung duoc SMTPJS vi bi chan, nen dung EmailJS thay the -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>  -->
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- EmailJS Init -->
+    <script>
+        emailjs.init({
+            publicKey: "E9BRT8QwbTmXh6yYe"
+        });
+    </script>
     <title>Super-H Consulting</title>
     <style>
         @font-face {
@@ -461,19 +473,57 @@
                     var email = document.getElementById("contact-email");
                     var subject = document.getElementById("contact-subject");
                     var message = document.getElementById("contact-message");
-                    Email.send({
-                        Host : "smtp.elasticemail.com",
-                        Username : "phuthinhnguyen1101@gmail.com",
-                        Password : "D96B9CC46BD97B138DCF21F8F5B78F2FED08",
-                        To : 'contact@opencompanyinvietnam.com',
-                        From : "phuthinhnguyen1101@gmail.com",
-                        Subject : subject.value,
-                        Body : `[From: ${name.value}, ${email.value}]<br>${message.value}`
-                    }).then(message=>{
-                        if (message=="OK"){
-                            $('.toast').toast("show")
-                        }
+
+                    // Khong dung duoc SMTPJS vi bi chan, nen dung EmailJS thay the
+                    // Email.send({
+                    //     Host : "smtp.elasticemail.com",
+                    //     Username : "phuthinhnguyen1101@gmail.com",
+                    //     Password : "E2CA36E7BF48E2CBC08A8A1F81D8427E811E",
+                    //     To : 'contact@opencompanyinvietnam.com',
+                    //     From : "phuthinhnguyen1101@gmail.com",
+                    //     Subject : subject.value,
+                    //     Body : `[From: ${name.value}, ${email.value}]<br>${message.value}`
+                    // }).then(message=>{
+                    //     if (message=="OK"){
+                    //         $('.toast').toast("show")
+                    //     }
+                    // })
+
+                    const now = new Date();
+                    const time =
+                        String(now.getDate()).padStart(2, '0') + "/" +
+                        String(now.getMonth() + 1).padStart(2, '0') + "/" +
+                        now.getFullYear() + " " +
+                        String(now.getHours()).padStart(2, '0') + ":" +
+                        String(now.getMinutes()).padStart(2, '0');
+
+                    const templateParams = {
+                        name: name.value,
+                        email: email.value,
+                        title: subject.value,
+                        message: message.value,
+                        time:time
+                    };
+
+                    emailjs.send(
+                        "service_p2el6r8",
+                        "template_ck57xd8",
+                        templateParams
+                    )
+                    .then(function(response) {
+
+                        console.log("Email sent:", response);
+
+                        $('.toast').toast("show");
+
                     })
+                    .catch(function(error) {
+
+                        console.error("Email failed:", error);
+
+                        alert("Không thể gửi email. Vui lòng thử lại.");
+
+                    });
                     name.value="";
                     email.value="";
                     subject.value="";
